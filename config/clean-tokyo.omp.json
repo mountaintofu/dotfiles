@@ -1,0 +1,115 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#7eb8da",
+          "properties": {
+            "time_format": "01/02/2006 @ 3:04:05 PM MST"
+          },
+          "style": "diamond",
+          "template": "[<#ffffff>\uf073</> {{ .CurrentDate | date .Format }}]",
+          "type": "time"
+        },
+        {
+          "foreground": "#be9ddf",
+          "properties": {
+            "style": "dallas",
+            "threshold": 0
+          },
+          "style": "diamond",
+          "template": "[<#ffffff>\uf252</> {{ .FormattedMs }}s]",
+          "type": "executiontime"
+        },
+        {
+          "foreground": "#7eb8da",
+          "style": "diamond",
+          "template": "[<#ffffff>\uebd8</> Subscription: <#ffff00>{{ .Name }}</>]",
+          "type": "az"
+        },
+        {
+          "foreground": "#7eb8da",
+          "style": "diamond",
+          "template": "[<#ffffff>\uebd8</> Azure Developer CLI Environment: <#ffff00>{{ .DefaultEnvironment  }}</> :: <#ffff00>{{ .Version }}</>]",
+          "type": "azd"
+        },
+        {
+          "foreground": "#7eb8da",
+          "style": "diamond",
+          "template": "[<#ffffff>\uf270</> <#ffff00>{{ .Profile }}</>{{if .Region}}@<#ffff00>{{ .Region }}</>{{ end }}]",
+          "type": "aws"
+        },
+        {
+          "foreground": "#7eb8da",
+          "style": "diamond",
+          "template": "[{{ if .Error }}{{ .Error }}{{ else }}<#ffffff>\uf1a0</> <#ffff00>{{ .Project }}</> :: <#ffff00>{{.Account}}</>{{ end }}]",
+          "type": "gcp"
+        },
+        {
+          "foreground": "#ffa5d8",
+          "style": "diamond",
+          "template": "[<#ffffff>\udb84\udcfe</> <#ffff00>{{.Context}}</>{{if .Namespace}} :: <#ffff00>{{.Namespace}}</>{{end}}]",
+          "type": "kubectl"
+        },
+        {
+          "foreground": "#ffa5d8",
+          "style": "diamond",
+          "template": "[{{ if .Error }}{{ .Error }}{{ else }}{{ if .Name }}<#ffffff>\uf487</> {{ .Name }}{{ end }}{{ if .Target }} {{ .Target }}{{ end }}{{ end }}]",
+          "type": "project"
+        },
+        {
+          "foreground": "#7eb8da",
+          "properties": {
+            "style": "full"
+          },
+          "style": "diamond",
+          "template": "[<#ffffff>\uf115</> <#98bfad>{{ .Path }}</>]",
+          "type": "path"
+        },
+        {
+          "foreground": "#ffa5d8",
+          "properties": {
+            "fetch_status": true,
+            "fetch_upstream_icon": true
+          },
+          "style": "plain",
+          "template": "[<#ffffff>{{ .UpstreamIcon }} </>{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <#ffffff>\uf044</> {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} <#ffffff>\uf046</> {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} <#ffffff>\ueb4b</> {{ .StashCount }}{{ end }}]",
+          "type": "git"
+        },
+        {
+          "style": "diamond",
+            "template": "<#ffff00>[#]</>",
+          "type": "root"
+        },
+        {
+          "foreground": "#ffa5d8",
+          "style": "diamond",
+          "template": "[<#ffffff>\uea6c</> command error]",
+          "type": "status"
+        },
+        {
+          "style": "diamond",
+          "template": ">",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "secondary_prompt": {
+    "background": "transparent",
+    "template": " "
+  },
+  "valid_line": {
+    "background": "transparent",
+    "template": "> "
+  },
+  "error_line": {
+    "background": "transparent",
+    "template": "<#ff0000>\uea87</> "
+  },
+  "version": 3
+}
