@@ -1,6 +1,6 @@
 ### Some theming files I use for my Linux machines.
 <ins>Current setup</ins> (Arch, XFCE4, X11)
-![](	/../main/screenshots/Screenshot_2025-11-22_10-39-25.png)
+![](	/../main/screenshots/image.png)
 - TokyoNight theme
 - genmon scripts implemented to xfce4-panel
 - zsh w/ oh-my-posh ("clean-tokyo.omp.json"*)
