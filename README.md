@@ -23,11 +23,8 @@
 <ins>Fourth</ins> (KDE Plasma):
 ![](	/../main/screenshots/kde-plasma-quick-rice-during-finals-week-i-procrastinated-v0-60ou1rxucs0f1.webp)
 
-<ins>Fifth</ins>:
-![](	/../main/screenshots/image.png)
-
 <ins>Sample</ins>
-"![](![](	/../main/screenshots/)"
+![](	/../main/screenshots/)
 
 <br/>
 *: custom<br/>
