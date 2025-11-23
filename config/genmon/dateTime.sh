@@ -1,42 +1,37 @@
-!/usr/bin/env bash
+#!/usr/bin/env zsh
 
-#genmon script for displaying the time
-#displays date and time on the tooltip
+# Robust timezone detection
+detect_timezone() {
+    # Try multiple methods in order of preference
+    local tz
+    
+    # Method 1: timedatectl (systemd)
+    tz=$(timedatectl show -p Timezone --value 2>/dev/null)
+    [[ -n "$tz" ]] && echo "$tz" && return
+    
+    # Method 2: /etc/timezone file
+    tz=$(cat /etc/timezone 2>/dev/null)
+    [[ -n "$tz" ]] && echo "$tz" && return
+    
+    # Method 3: /etc/localtime symlink
+    tz=$(readlink -f /etc/localtime 2>/dev/null | sed 's|.*/zoneinfo/||')
+    [[ -n "$tz" ]] && echo "$tz" && return
+    
+    # Method 4: Check TZ environment variable
+    [[ -n "$TZ" ]] && echo "$TZ" && return
+    
+    # Fallback
+    echo "UTC"
+}
 
-# set Label = Hello
+# Set and export timezone
+export TZ=$(detect_timezone)
 
-TIME=$(echo "\ue383 ")
-DATE=$(echo "\uf073 ")
-DATE+=`date '+ %d %B %A %H:%M'`
-TIME+=`date '+%H:%M'`
+# Get time with explicit timezone
+TIME_NOW=$(TZ="$TZ" date '+%H:%M')
+DATE_NOW=$(TZ="$TZ" date '+%d %B %A %H:%M')
 
-# Panel
-INFO="<txt>"
-INFO+="${TIME}"
-INFO+="</txt>"
-
-# Tooltip
-MORE_INFO="<tool>"
-MORE_INFO+="${DATE}"
-MORE_INFO+="</tool>"
-
-# CSS Styling
-CSS="<css>"
-CSS+=".genmon_value {
-#      background-color: #5c97a7; 
-      color:#ffffff; 
-      padding-left:10px; 
-      padding-right:10px; 
-    } 
-    .genmon_label {color:green}"
-CSS+="</css>"
-
-
-# Panel Print
-echo -e "${INFO}"
-
-# Tooltip Print
-echo -e "${MORE_INFO}"
-
-# Add Styling
-echo -e "${CSS}"
+# Output
+echo "<txt>\ue383 ${TIME_NOW}</txt>"
+echo "<tool>\uf073 ${DATE_NOW}</tool>"
+echo '<css>.genmon_value{color:#ffffff;padding:0 10px;}</css>'
