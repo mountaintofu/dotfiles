@@ -1,0 +1,12 @@
+# System Load Monitor
+mm = #9ECE6A
+sw = #E0AF68
+
+# Network Monitor
+in = #F7768E
+out = #E0AF68
+
+# CPU Graph (gradient, usage bars, width = 16)
+bars = #E0AF68
+c1 = #7AA2F7
+c2 = #F7768E
