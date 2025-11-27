@@ -11,10 +11,11 @@ readonly WINDOW_TITLE=`xdotool getwindowfocus getwindowname`
 INFO="<txt>"
 
 if [ "$WINDOW_TITLE" == "Xfwm4" ]; then
-  INFO+=$(echo "$(whoami)@$(hostname)")
-elif [ ${#WINDOW_TITLE} -gt 50 ]; then #limit the length of the title
+#  INFO+=$(echo "$(whoami)@$(hostname)")
+  INFO+=$(echo "Welcome")
+elif [ ${#WINDOW_TITLE} -gt 40 ]; then #limit the length of the title
   # Trim the title and add ellipsis
-  INFO+="${WINDOW_TITLE:0:50}..."
+  INFO+="${WINDOW_TITLE:0:40}..."
 else
   INFO+="${WINDOW_TITLE}"
 fi
