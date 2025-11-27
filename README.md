@@ -9,7 +9,7 @@
 - modified-otis-darker*
 - Bibata-Modern-Ice
 
-### My old setups (Mostly XFCE4):
+### My old setups (Mostly XFCE4 and no longer used):
 <ins>First</ins>:
 ![](	/../main/screenshots/jdr6pc3ssh781.png)
 
