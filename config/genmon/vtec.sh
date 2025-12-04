@@ -141,7 +141,7 @@ get_display() {
     
     if [ "$cpu_state" = "on" ]; then
         COLOR="#F7768E"
-        TOOLTIP="V-TEC: ENGAGED!${NL}├─ CPU: Performance${NL}├─ Temp: ${cpu_temp}${NL}├─ Fan: ${fan_rpm} RPM${NL}└─ Control: ${fan_status}${NL}Click to disable"
+        TOOLTIP="V-TEC: ENGAGED!${NL}├─ CPU: Performance${NL}├─ Temp: ${cpu_temp}${NL}├─ Fan: ${fan_rpm} RPM${NL}└─ Control: ${fan_status}${NL}Click to disable."
     else
         COLOR="#808080"
         TOOLTIP="V-TEC: OFF${NL}├─ CPU: Powersave${NL}├─ Temp: ${cpu_temp}${NL}├─ Fan: ${fan_rpm} RPM${NL}└─ Control: ${fan_status}${NL}Click to engage"
