@@ -1,6 +1,6 @@
 ### Some theming files I use for my Linux machines.
 <ins>Current setup</ins> (Arch, XFCE4, X11)
-![](	/../main/screenshots/Screenshot_2025-11-23_03-27-25.png)
+![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 - TokyoNight theme
 - genmon scripts implemented to xfce4-panel
 - zsh w/ oh-my-posh ("clean-tokyo.omp.json"*)
@@ -21,6 +21,9 @@
 
 <ins>Fourth</ins> (KDE Plasma):
 ![](	/../main/screenshots/kde-plasma-quick-rice-during-finals-week-i-procrastinated-v0-60ou1rxucs0f1.webp)
+
+<ins>Fifth</ins>
+![](	/../main/screenshots/Screenshot_2025-11-23_03-27-25.png)
 
 <ins>Sample</ins>
 ![](	/../main/screenshots/)
