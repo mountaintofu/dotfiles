@@ -1,5 +1,15 @@
 #!/bin/bash
-# vtec-genmon.sh - V-TEC with Dell fan support
+
+# Cache file for hardware detection
+HW_CACHE="/tmp/vtec-hw-cache"
+
+get_cached_fan_type() {
+    if [[ -f "$HW_CACHE" ]] && (( $(date +%s) - $(stat -c %Y "$HW_CACHE") < 300 )); then
+        cat "$HW_CACHE"
+    else
+        get_fan_control_type | tee "$HW_CACHE"
+    fi
+}
 
 # Find dell_smm hwmon path (number can change)
 find_dell_hwmon() {
@@ -126,7 +136,7 @@ get_display() {
     local cpu_state=$(check_cpu_state)
     local fan_rpm=$(get_fan_rpm)
     local cpu_temp=$(get_cpu_temp)
-    local fan_type=$(get_fan_control_type)
+    local fan_type=$(get_cached_fan_type)
     local SCRIPT_PATH="$(readlink -f "$0")"
     
     local fan_status
