@@ -1,239 +1,147 @@
 #!/usr/bin/env zsh
-# Dependencies: zsh>=5.0, coreutils, gawk, xfce4-power-manager
+# Dependencies: zsh>=5.0, gawk, xfce4-power-manager
 
-readonly DIR="$(cd "$(dirname "${(%):-%x}")" && pwd)"
+readonly CACHE_FILE="/tmp/battery-static-cache"
+readonly CACHE_MAX_AGE=3600  # seconds
 
-# Find battery and AC paths
-BAT_PATH=$(find /sys/class/power_supply/ -name "BAT*" 2>/dev/null | head -n 1)
-AC_PATH=$(find /sys/class/power_supply/ -name "AC*" -o -name "ADP*" 2>/dev/null | head -n 1)
-
-if [ -z "$BAT_PATH" ]; then
-    echo "<txt>No Battery</txt>"
-    exit 0
-fi
-
-# Function to safely read sysfs files
+# Safely read sysfs file (use zsh's < redirection - faster than cat)
 safe_read() {
-    local file=$1
-    local default=${2:-"Unknown"}
-    if [ -f "$file" ] && [ -r "$file" ]; then
-        cat "$file" 2>/dev/null || echo "$default"
-    else
-        echo "$default"
-    fi
+    [[ -r $1 ]] && <"$1" 2>/dev/null || print "${2:-Unknown}"
 }
 
-# Read basic info
-readonly MANUFACTURER=$(safe_read "$BAT_PATH/manufacturer" "Unknown")
-readonly MODEL=$(safe_read "$BAT_PATH/model_name" "Unknown")
-readonly TECHNOLOGY=$(safe_read "$BAT_PATH/technology" "Unknown")
-readonly BATTERY=$(safe_read "$BAT_PATH/capacity" "0")
+# Use glob instead of find (faster, no fork)
+find_battery() {
+    local matches=(/sys/class/power_supply/BAT*(N-/))
+    (( ${#matches} )) && { print "${matches[1]}"; return 0; }
+    return 1
+}
 
-# Read battery status: "Charging", "Discharging", "Not charging", "Full", "Unknown"
-readonly BAT_STATUS=$(safe_read "$BAT_PATH/status" "Unknown")
-
-# Serial number detection
 get_serial_number() {
-    if [ -f "$BAT_PATH/serial_number" ] && [ -r "$BAT_PATH/serial_number" ]; then
-        local serial=$(cat "$BAT_PATH/serial_number" 2>/dev/null)
-        if [ -n "$serial" ] && [ "$serial" != " " ] && [ "$serial" != "0" ]; then
-            echo "$serial"
-            return
+    local serial=$(safe_read "$BAT_PATH/serial_number" "")
+    [[ -n $serial && $serial != [[:space:]]# && $serial != 0 ]] && { print "$serial"; return; }
+    
+    if (( $+commands[upower] )); then
+        serial=$(upower -i "/org/freedesktop/UPower/devices/battery_${BAT_PATH:t}" 2>/dev/null | 
+                 awk '/serial:/{print $2; exit}')
+        [[ -n $serial && $serial != 0 ]] && { print "$serial"; return; }
+    fi
+    print "N/A"
+}
+
+load_static_info() {
+    # Check cache validity
+    if [[ -f $CACHE_FILE ]]; then
+        zmodload -F zsh/stat b:zstat 2>/dev/null
+        local -i mtime=$(zstat +mtime "$CACHE_FILE" 2>/dev/null || print 0)
+        if (( EPOCHSECONDS - mtime < CACHE_MAX_AGE )); then
+            source "$CACHE_FILE" 2>/dev/null
+            [[ -d $BAT_PATH ]] && return 0
         fi
     fi
     
-    if command -v upower &> /dev/null; then
-        local bat_name=$(basename "$BAT_PATH")
-        local serial=$(upower -i /org/freedesktop/UPower/devices/battery_${bat_name} 2>/dev/null | grep "serial:" | awk '{print $2}')
-        if [ -n "$serial" ] && [ "$serial" != "0" ]; then
-            echo "$serial"
-            return
-        fi
-    fi
+    BAT_PATH=$(find_battery) || return 1
+    MANUFACTURER=$(safe_read "$BAT_PATH/manufacturer")
+    MODEL=$(safe_read "$BAT_PATH/model_name")
+    TECHNOLOGY=$(safe_read "$BAT_PATH/technology")
+    SERIAL_NUMBER=$(get_serial_number)
     
-    echo "N/A"
+    # Use printf %q for proper escaping
+    printf '%s=%q\n' BAT_PATH "$BAT_PATH" MANUFACTURER "$MANUFACTURER" \
+        MODEL "$MODEL" TECHNOLOGY "$TECHNOLOGY" SERIAL_NUMBER "$SERIAL_NUMBER" > "$CACHE_FILE"
 }
 
-readonly SERIAL_NUMBER=$(get_serial_number)
-
-# Function to convert microunits to regular units
-convert_micro() {
-    local value=$1
-    if [ -n "$value" ] && [ "$value" != "0" ]; then
-        awk -v val="$value" 'BEGIN {printf "%.2f", val / 1000000}'
-    else
-        echo "0"
-    fi
-}
-
-# Read energy/charge values
-if [ -f "$BAT_PATH/energy_now" ]; then
-    ENERGY=$(convert_micro "$(safe_read "$BAT_PATH/energy_now" "0")")
-    ENERGY_FULL=$(convert_micro "$(safe_read "$BAT_PATH/energy_full" "0")")
-    ENERGY_DESIGN=$(convert_micro "$(safe_read "$BAT_PATH/energy_full_design" "0")")
-elif [ -f "$BAT_PATH/charge_now" ]; then
-    VOLTAGE_NOW=$(safe_read "$BAT_PATH/voltage_now" "0")
-    CHARGE_NOW=$(safe_read "$BAT_PATH/charge_now" "0")
-    CHARGE_FULL=$(safe_read "$BAT_PATH/charge_full" "0")
-    CHARGE_DESIGN=$(safe_read "$BAT_PATH/charge_full_design" "0")
-    
-    if [ "$VOLTAGE_NOW" != "0" ]; then
-        ENERGY=$(awk -v c="$CHARGE_NOW" -v v="$VOLTAGE_NOW" 'BEGIN {printf "%.2f", (c * v) / 1000000000000}')
-        ENERGY_FULL=$(awk -v c="$CHARGE_FULL" -v v="$VOLTAGE_NOW" 'BEGIN {printf "%.2f", (c * v) / 1000000000000}')
-        ENERGY_DESIGN=$(awk -v c="$CHARGE_DESIGN" -v v="$VOLTAGE_NOW" 'BEGIN {printf "%.2f", (c * v) / 1000000000000}')
-    else
-        ENERGY="0"
-        ENERGY_FULL="0"
-        ENERGY_DESIGN="0"
-    fi
-else
-    ENERGY="N/A"
-    ENERGY_FULL="N/A"
-    ENERGY_DESIGN="N/A"
-fi
-
-readonly VOLTAGE=$(convert_micro "$(safe_read "$BAT_PATH/voltage_now" "0")")
-
-if [ -f "$BAT_PATH/power_now" ]; then
-    RATE=$(convert_micro "$(safe_read "$BAT_PATH/power_now" "0")")
-elif [ -f "$BAT_PATH/current_now" ]; then
-    CURRENT_NOW=$(safe_read "$BAT_PATH/current_now" "0")
-    VOLTAGE_NOW=$(safe_read "$BAT_PATH/voltage_now" "0")
-    if [ "$VOLTAGE_NOW" != "0" ]; then
-        RATE=$(awk -v c="$CURRENT_NOW" -v v="$VOLTAGE_NOW" 'BEGIN {printf "%.2f", (c * v) / 1000000000000}')
-    else
-        RATE="0"
-    fi
-else
-    RATE="N/A"
-fi
-
-if [ -f "$BAT_PATH/temp" ]; then
-    TEMP_RAW=$(safe_read "$BAT_PATH/temp" "0")
-    TEMPERATURE=$(awk -v t="$TEMP_RAW" 'BEGIN {printf "%.1f", t / 10}')
-else
-    TEMPERATURE="N/A"
-fi
-
-# Calculate time remaining using upower if available
 get_time_remaining() {
-    if command -v upower &> /dev/null; then
-        local bat_name=$(basename "$BAT_PATH")
-        local time_info=$(upower -i /org/freedesktop/UPower/devices/battery_${bat_name} 2>/dev/null | grep "time to" | head -1 | awk -F': ' '{print $2}' | xargs)
-        if [ -n "$time_info" ]; then
-            echo "$time_info"
-            return
-        fi
-    fi
-    echo "N/A"
+    (( $+commands[upower] )) || { print "N/A"; return; }
+    upower -i "/org/freedesktop/UPower/devices/battery_${BAT_PATH:t}" 2>/dev/null |
+        awk '/time to/{sub(/.*: */, ""); print; exit}' || print "N/A"
 }
 
-readonly TIME_UNTIL=$(get_time_remaining)
-
-# Function to generate battery bar
 generate_battery_bar() {
-    local percent=$1
-    #local CHAR_FILLED="█"  # Block (recommended)
-    #local CHAR_FILLED="#"  # Hash
-    #local CHAR_FILLED="●"  # Filled dot
-    #local CHAR_FILLED="|"  # Pipe
-    local CHAR_FILLED="▮"  # Narrow block
-    local CHAR_EMPTY=" "
-    local BAR_LENGTH=4
-    
-    local segments=$(( (percent + 24) / 25 ))
-    [ $segments -gt $BAR_LENGTH ] && segments=$BAR_LENGTH
-    [ $segments -lt 0 ] && segments=0
-    
-    local filled=""
-    local empty=""
-    
-    for ((i=0; i<segments; i++)); do
-        filled+="${CHAR_FILLED}"
-    done
-    for ((i=segments; i<BAR_LENGTH; i++)); do
-        empty+="${CHAR_EMPTY}"
-    done
-    
-    echo "${filled}${empty}"
+    local -i segs=$(( ($1 + 24) / 25 ))
+    (( segs = segs > 4 ? 4 : segs < 0 ? 0 : segs ))
+    print -n "${(l:segs::▮:)}${(l:4-segs:: :)}"
 }
 
-BATTERY_BAR=$(generate_battery_bar "${BATTERY}")
+# === Main ===
+zmodload -F zsh/datetime p:EPOCHSECONDS 2>/dev/null
 
-# Panel
-INFO=""
-if command -v xfce4-power-manager-settings &> /dev/null; then
-    INFO+="<txtclick>xfce4-power-manager-settings</txtclick>"
-    INFO+="<click>xfce4-power-manager-settings</click>"
+load_static_info || { print "<txt>No Battery</txt>"; exit 0; }
+
+# Read dynamic values once
+typeset -i BATTERY=$(safe_read "$BAT_PATH/capacity" 0)
+typeset BAT_STATUS=$(safe_read "$BAT_PATH/status" "Unknown")
+typeset -i VOLTAGE_RAW=$(safe_read "$BAT_PATH/voltage_now" 0)
+
+# Batch all numeric conversions in single awk call
+if [[ -f $BAT_PATH/energy_now ]]; then
+    read -r ENERGY ENERGY_FULL ENERGY_DESIGN VOLTAGE RATE < <(
+        awk -v e="$(safe_read "$BAT_PATH/energy_now" 0)" \
+            -v ef="$(safe_read "$BAT_PATH/energy_full" 0)" \
+            -v ed="$(safe_read "$BAT_PATH/energy_full_design" 0)" \
+            -v v="$VOLTAGE_RAW" \
+            -v p="$(safe_read "$BAT_PATH/power_now" 0)" \
+            'BEGIN {printf "%.2f %.2f %.2f %.2f %.2f", e/1e6, ef/1e6, ed/1e6, v/1e6, p/1e6}'
+    )
+elif [[ -f $BAT_PATH/charge_now ]]; then
+    read -r ENERGY ENERGY_FULL ENERGY_DESIGN VOLTAGE RATE < <(
+        awk -v cn="$(safe_read "$BAT_PATH/charge_now" 0)" \
+            -v cf="$(safe_read "$BAT_PATH/charge_full" 0)" \
+            -v cd="$(safe_read "$BAT_PATH/charge_full_design" 0)" \
+            -v v="$VOLTAGE_RAW" \
+            -v c="$(safe_read "$BAT_PATH/current_now" 0)" \
+            'BEGIN {
+                if(v==0){print "0 0 0 0 0"; exit}
+                printf "%.2f %.2f %.2f %.2f %.2f", cn*v/1e12, cf*v/1e12, cd*v/1e12, v/1e6, c*v/1e12
+            }'
+    )
+else
+    ENERGY="N/A" ENERGY_FULL="N/A" ENERGY_DESIGN="N/A" RATE="N/A"
+    VOLTAGE=$(awk "BEGIN{printf \"%.2f\", $VOLTAGE_RAW/1e6}")
 fi
+
+# Temperature (single read + awk)
+[[ -f $BAT_PATH/temp ]] && TEMPERATURE=$(awk "BEGIN{printf \"%.1f\", $(< "$BAT_PATH/temp")/10}") || TEMPERATURE="N/A"
+
+TIME_UNTIL=$(get_time_remaining)
+BATTERY_BAR=$(generate_battery_bar $BATTERY)
+
+# Build output - single string construction
+typeset INFO="" MORE_INFO=""
+(( $+commands[xfce4-power-manager-settings] )) && \
+    INFO="<txtclick>xfce4-power-manager-settings</txtclick><click>xfce4-power-manager-settings</click>"
 
 INFO+="<txt>"
-
-case "${BAT_STATUS}" in
+typeset GRAY="#808080"
+case $BAT_STATUS in
     Charging)
-        # Charging - everything Cyan
-        INFO+="<span weight='Bold' fgcolor='Cyan'>[${BATTERY_BAR}]</span>"
-        ;;
+        INFO+="<span weight='Bold' fgcolor='Cyan'>[${BATTERY_BAR}]</span>" ;;
     Full|"Not charging")
-        # Full or Not charging - Green
-        INFO+="<span weight='Bold' fgcolor='Light Green'>[${BATTERY_BAR}]</span>"
-        ;;
+        INFO+="<span weight='Bold' fgcolor='Light Green'>[${BATTERY_BAR}]</span>" ;;
     Discharging)
-        # Discharging - gray brackets, colored content
-        GRAY="#808080"
-        
-        if [ "${BATTERY}" -lt 10 ]; then
-            INFO+="<span fgcolor='${GRAY}'>[</span>"
-            INFO+="<span weight='Bold' fgcolor='White' bgcolor='Red'>${BATTERY_BAR}</span>"
-            INFO+="<span fgcolor='${GRAY}'>]</span>"
-        elif [ "${BATTERY}" -lt 25 ]; then
-            INFO+="<span fgcolor='${GRAY}'>[</span>"
-            INFO+="<span weight='Bold' fgcolor='Red'>${BATTERY_BAR}</span>"
-            INFO+="<span fgcolor='${GRAY}'>]</span>"
-        elif [ "${BATTERY}" -lt 50 ]; then
-            INFO+="<span fgcolor='${GRAY}'>[</span>"
-            INFO+="<span fgcolor='Yellow'>${BATTERY_BAR}</span>"
-            INFO+="<span fgcolor='${GRAY}'>]</span>"
-        else
-            INFO+="<span fgcolor='${GRAY}'>[</span>"
-            INFO+="<span fgcolor='White'>${BATTERY_BAR}</span>"
-            INFO+="<span fgcolor='${GRAY}'>]</span>"
-        fi
-        ;;
+        typeset c="White" w="" bg=""
+        (( BATTERY < 10 ))  && { c="White"; w=" weight='Bold'"; bg=" bgcolor='Red'"; }  ||
+        (( BATTERY < 25 ))  && c="Red" ||
+        (( BATTERY < 50 ))  && c="Yellow"
+        INFO+="<span fgcolor='$GRAY'>[</span><span${w} fgcolor='$c'${bg}>${BATTERY_BAR}</span><span fgcolor='$GRAY'>]</span>" ;;
     *)
-        # Unknown state - Yellow
-        INFO+="<span weight='Bold' fgcolor='Yellow'>[${BATTERY_BAR}]</span>"
-        ;;
+        INFO+="<span weight='Bold' fgcolor='Yellow'>[${BATTERY_BAR}]</span>" ;;
 esac
-
 INFO+="</txt>"
 
-# Tooltip
-MORE_INFO="<tool>"
-MORE_INFO+="┌ ${MANUFACTURER} ${MODEL}\n"
-[ "$SERIAL_NUMBER" != "N/A" ] && MORE_INFO+="├─ Serial number: ${SERIAL_NUMBER}\n"
-MORE_INFO+="├─ Technology: ${TECHNOLOGY}\n"
-[ "$TEMPERATURE" != "N/A" ] && MORE_INFO+="├─ Temperature: +${TEMPERATURE}℃\n"
-MORE_INFO+="├─ Status: ${BAT_STATUS}\n"
-MORE_INFO+="├─ Capacity: ${BATTERY}%\n"
-MORE_INFO+="├─ Energy: ${ENERGY} Wh\n"
-MORE_INFO+="├─ Energy when full: ${ENERGY_FULL} Wh\n"
-MORE_INFO+="├─ Energy (design): ${ENERGY_DESIGN} Wh\n"
-MORE_INFO+="├─ Rate: ${RATE} W\n"
+# Tooltip - use single heredoc-style construction
+MORE_INFO="<tool>┌ ${MANUFACTURER} ${MODEL}"
+[[ $SERIAL_NUMBER != N/A ]] && MORE_INFO+="\n├─ Serial number: $SERIAL_NUMBER"
+MORE_INFO+="\n├─ Technology: $TECHNOLOGY"
+[[ $TEMPERATURE != N/A ]] && MORE_INFO+="\n├─ Temperature: +${TEMPERATURE}℃"
+MORE_INFO+="\n├─ Status: $BAT_STATUS\n├─ Capacity: ${BATTERY}%"
+MORE_INFO+="\n├─ Energy: $ENERGY Wh\n├─ Energy when full: $ENERGY_FULL Wh"
+MORE_INFO+="\n├─ Energy (design): $ENERGY_DESIGN Wh\n├─ Rate: $RATE W"
 
-case "${BAT_STATUS}" in
-    Discharging)
-        MORE_INFO+="└─ Remaining: ${TIME_UNTIL}"
-        ;;
-    Charging)
-        MORE_INFO+="└─ Time to full: ${TIME_UNTIL}"
-        ;;
-    *)
-        MORE_INFO+="└─ Voltage: ${VOLTAGE} V"
-        ;;
+case $BAT_STATUS in
+    Discharging) MORE_INFO+="\n└─ Remaining: $TIME_UNTIL" ;;
+    Charging)    MORE_INFO+="\n└─ Time to full: $TIME_UNTIL" ;;
+    *)           MORE_INFO+="\n└─ Voltage: $VOLTAGE V" ;;
 esac
-
 MORE_INFO+="</tool>"
 
-echo -e "${INFO}"
-echo -e "${MORE_INFO}"
+print -l -- "$INFO" "$MORE_INFO"
