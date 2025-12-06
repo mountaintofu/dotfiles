@@ -2,28 +2,12 @@
 <ins>Current setup</ins> (Arch, XFCE4, X11)
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 - TokyoNight theme
-- genmon scripts implemented to xfce4-panel
+- genmon scripts* implemented to xfce4-panel (windowTitle.sh, vtec.sh, batteryBar.sh, presentationMode.sh)
 - zsh w/ oh-my-posh ("clean-tokyo.omp.json"*)
 ![](	/../main/screenshots/clean-tokyo.png)
 - Tela-circle-blue
 - modified-otis-darker*
 - Bibata-Modern-Ice
-
-### My old setups (Mostly XFCE4 and no longer used):
-<ins>First</ins>:
-![](	/../main/screenshots/jdr6pc3ssh781.png)
-
-<ins>Second</ins>:
-![](	/../main/screenshots/5y5g4as55yf81.png)
-
-<ins>Third</ins>:
-![](	/../main/screenshots/echjbs9k2ktd1.png)
-
-<ins>Fourth</ins> (KDE Plasma):
-![](	/../main/screenshots/kde-plasma-quick-rice-during-finals-week-i-procrastinated-v0-60ou1rxucs0f1.webp)
-
-<ins>Fifth</ins>
-![](	/../main/screenshots/Screenshot_2025-11-23_03-27-25.png)
 
 <ins>Sample</ins>
 ![](	/../main/screenshots/)
