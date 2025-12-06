@@ -1,40 +1,16 @@
-!/usr/bin/env zsh
+#!/usr/bin/env zsh
 
-#genmon script for displaying the time
-#displays date and time on the tooltip
+# Cache xdotool path to avoid lookup
+XDOTOOL=/usr/bin/xdotool
 
-# set Label = Hello
+WINDOW_TITLE=$($XDOTOOL getwindowfocus getwindowname 2>/dev/null) || WINDOW_TITLE=""
 
-readonly WINDOW_TITLE=`xdotool getwindowfocus getwindowname`
-
-# Panel
-INFO="<txt>"
-
-if [ "$WINDOW_TITLE" == "Xfwm4" ]; then
-#  INFO+=$(echo "$(whoami)@$(hostname)")
-  INFO+=$(echo "Welcome")
-elif [ ${#WINDOW_TITLE} -gt 40 ]; then #limit the length of the title
-  # Trim the title and add ellipsis
-  INFO+="${WINDOW_TITLE:0:40}..."
+if [[ -z "$WINDOW_TITLE" || "$WINDOW_TITLE" == "Xfwm4" ]]; then
+    echo "<txt>Welcome</txt>"
+    echo '<css>.genmon_value{color:#ffffff;padding:0 10px;}</css>'
 else
-  INFO+="${WINDOW_TITLE}"
+    # Truncate in zsh directly (no external commands)
+    (( ${#WINDOW_TITLE} > 40 )) && WINDOW_TITLE="${WINDOW_TITLE:0:40}..."
+    echo "<txt>${WINDOW_TITLE}</txt>"
+    echo '<css>.genmon_value{color:#ffffff;padding:0 10px;}</css>'
 fi
-
-INFO+="</txt>"
-
-# CSS Styling
-CSS="<css>"
-CSS+=".genmon_value {
-#      background-color: #093058; 
-      color:#ffffff; 
-      padding-left:10px; 
-      padding-right:10px; 
-    }" 
-CSS+="</css>"
-
-
-# Panel Print
-echo -e "${INFO}"
-
-# Add Styling
-echo -e "${CSS}"
