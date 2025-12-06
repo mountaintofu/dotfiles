@@ -1,5 +1,5 @@
-#!/bin/bash
-# changed to only [ON] for simplicity.
+#!/bin/zsh
+# changed to only [IDLE] for simplicity.
 
 MAIN_SCRIPT="xfconf-query -c xfce4-power-manager -n -p /xfce4-power-manager/presentation-mode -T"
 
