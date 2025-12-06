@@ -25,7 +25,7 @@ DELL_HWMON=$(find_dell_hwmon)
 
 # Check CPU frequency state
 check_cpu_state() {
-    if cpupower-gui freq 2>/dev/null | grep -qi "636"; then
+    if cpupower-gui freq 2>/dev/null | grep -qi "510"; then
         echo "off"
     else
         echo "on"
