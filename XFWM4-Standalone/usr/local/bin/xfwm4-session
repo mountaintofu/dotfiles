@@ -1,0 +1,7 @@
+#!/bin/bash
+xfsettingsd &
+xfce4-panel &
+xfdesktop &
+xfce4-power-manager &
+xfce4-notifyd &
+exec xfwm4
