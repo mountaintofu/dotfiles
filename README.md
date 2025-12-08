@@ -4,7 +4,7 @@
 - TokyoNight theme
 - xfce4-panel, genmon scripts* (windowTitle.sh, vtec.sh, batteryBar.sh, presentationMode.sh)
 - zsh w/ oh-my-posh ("clean-tokyo.omp.json"*)
-![](	/../main/screenshots/clean-tokyo.png)
+![](	/../main/screenshots/minimal-tokyo.png)
 - Tela-circle-blue
 - modified-otis-darker*
 - Bibata-Modern-Ice
