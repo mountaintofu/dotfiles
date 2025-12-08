@@ -9,9 +9,6 @@
 - modified-otis-darker*
 - Bibata-Modern-Ice
 
-<ins>Sample</ins>
-![](	/../main/screenshots/)
-
 <br/>
 *: custom<br/>
 <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
