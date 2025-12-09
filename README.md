@@ -13,8 +13,8 @@ This is a repository to keep track of what I've done to my system.
 - modified-otis-darker*.
 - Bibata-Modern-Ice mouse.
 - _MilkGrub_ theme.
-- tlp (default=_auto_) + cpupower-gui (default=_Bottle_) for _v-tec.sh_ (Performance/Bottle mode).
-- ufw (script: _ufw-paranoid.sh_).
+- tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
+- ufw (script: _ufw-paranoid.sh_*).
 
 There are also other systems I've had from years ago (check _screenshots_) and a dumb one (_XFWM4-Standalone_).
 
@@ -26,4 +26,5 @@ There are also other systems I've had from years ago (check _screenshots_) and a
 
 <br/>
 *: custom<br/>
+
 <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
