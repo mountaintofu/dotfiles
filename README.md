@@ -13,7 +13,7 @@ This is a repository to keep track of what I've done to my system.
 - Bibata-Modern-Ice
 - tlp
 - ufw
-- cpupower-gui
+- cpupower-gui (Bottle)
 
 <br/>
 *: custom<br/>
