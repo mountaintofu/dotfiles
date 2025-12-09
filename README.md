@@ -1,5 +1,6 @@
-### Some tinkering I did for my Linux machines.
-<ins>Current setup</ins> (Arch, XFCE4, X11)
+## Some tinkering I did for my Linux machines.
+
+### <ins>Current setup</ins> (Arch, XFCE4, X11)
 
 This is a repository to keep track of what I've done to my system.
 
@@ -14,7 +15,7 @@ This is a repository to keep track of what I've done to my system.
 - tlp (default=auto) + cpupower-gui (default=Bottle) for v-tec.sh(Performance/Bottle mode)
 - ufw (setup file: ufw-paranoid.sh)
 
-## Things to consider in the future:
+### Things to consider in the future:
 - Easy setup script for potential system nuking
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first)
 - Try not to be an idiot
