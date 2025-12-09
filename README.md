@@ -19,6 +19,7 @@ This is a repository to keep track of what I've done to my system.
 There are also other systems I've had from years ago (check _screenshots_) and a dumb one (_XFWM4-Standalone_).
 
 ### Things to consider in the future:
+- Make the repo tidier.
 - Simple shell script for restoration in case of a potential system nuking.
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first).
 - Try not to be an idiot and keep your head high (also, be extra careful).
