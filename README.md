@@ -6,14 +6,14 @@ This is a repository to keep track of what I've done to my system.
 
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 - TokyoNight GTK theme
-- xfce4-panel, genmon scripts* (windowTitle.sh, vtec.sh, batteryBar.sh, presentationMode.sh)
-- yay + zsh + oh-my-posh (minimal-tokyo.omp.json*)
+- xfce4-panel, genmon scripts* (_windowTitle.sh_, _vtec.sh_, _batteryBar.sh_, _presentationMode.sh_)
+- yay + zsh + oh-my-posh (_minimal-tokyo.omp.json_*)
 ![](	/../main/screenshots/minimal-tokyo.png)
 - Tela-circle-blue
 - modified-otis-darker*
 - Bibata-Modern-Ice
-- tlp (default=auto) + cpupower-gui (default=Bottle) for v-tec.sh (Performance/Bottle mode)
-- ufw (setup file: ufw-paranoid.sh)
+- tlp (default=_auto_) + cpupower-gui (default=_Bottle_) for _v-tec.sh_ (Performance/Bottle mode)
+- ufw (script: _ufw-paranoid.sh_)
 
 ### Things to consider in the future:
 - Easy setup script for potential system nuking
