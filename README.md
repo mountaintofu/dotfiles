@@ -1,13 +1,15 @@
-### Some theming files I use for my Linux machines.
+### Some tinkering I did for my Linux machines.
 <ins>Current setup</ins> (Arch, XFCE4, X11)
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
-- TokyoNight theme
+- TokyoNight GTK theme
 - xfce4-panel, genmon scripts* (windowTitle.sh, vtec.sh, batteryBar.sh, presentationMode.sh)
-- zsh w/ oh-my-posh (minimal-tokyo.omp.json*)
+- yay + zsh + oh-my-posh (minimal-tokyo.omp.json*)
 ![](	/../main/screenshots/minimal-tokyo.png)
 - Tela-circle-blue
 - modified-otis-darker*
 - Bibata-Modern-Ice
+- tlp
+- ufw
 
 <br/>
 *: custom<br/>
