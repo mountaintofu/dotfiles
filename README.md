@@ -11,9 +11,8 @@ This is a repository to keep track of what I've done to my system.
 - Tela-circle-blue
 - modified-otis-darker*
 - Bibata-Modern-Ice
-- tlp
-- ufw
-- cpupower-gui (Bottle)
+- tlp (default=auto) + cpupower-gui (default=Bottle) for v-tec.sh(Performance/Bottle mode)
+- ufw (setup file: ufw-paranoid.sh)
 
 <br/>
 *: custom<br/>
