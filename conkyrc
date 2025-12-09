@@ -1,4 +1,5 @@
 conky.config = {
+    -- Simple, but unused for the foreseeable future of my system
     -- General
     update_interval = 1,
     double_buffer = true,
