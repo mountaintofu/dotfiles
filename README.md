@@ -12,13 +12,13 @@ This is a repository to keep track of what I've done to my system.
 - Tela-circle-blue
 - modified-otis-darker*
 - Bibata-Modern-Ice
-- tlp (default=auto) + cpupower-gui (default=Bottle) for v-tec.sh(Performance/Bottle mode)
+- tlp (default=auto) + cpupower-gui (default=Bottle) for v-tec.sh (Performance/Bottle mode)
 - ufw (setup file: ufw-paranoid.sh)
 
 ### Things to consider in the future:
 - Easy setup script for potential system nuking
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first)
-- Try not to be an idiot
+- Try not to be an idiot and keep your head high
 
 <br/>
 *: custom<br/>
