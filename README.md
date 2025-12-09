@@ -16,7 +16,7 @@ This is a repository to keep track of what I've done to my system.
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_) for _v-tec.sh_ (Performance/Bottle mode).
 - ufw (script: _ufw-paranoid.sh_).
 
-There are also other "riced" systems I've had before (check _screenshots_) and a dumb one (_XFWM4-Standalone_).
+There are also other systems I've had from years ago (check _screenshots_) and a dumb one (_XFWM4-Standalone_).
 
 ### Things to consider in the future:
 - Simple shell script for restoration in case of a potential system nuking.
