@@ -19,7 +19,7 @@ This is a repository to keep track of what I've done to my system.
 ### Things to consider in the future:
 - Easy setup script for potential system nuking
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first)
-- Try not to be an idiot and keep your head high
+- Try not to be an idiot and keep your head high (also, be extra careful)
 
 <br/>
 *: custom<br/>
