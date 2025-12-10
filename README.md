@@ -2,7 +2,7 @@
 
 ### Current setup (Arch Linux, XFCE4, X11):
 
-> Hardware: <ins>Lexar SL300 1TB</ins> (got it on sale, lol), and whatever laptop/computer I got my hands on.\
+> Hardware: <ins>Lexar SL300 1TB</ins> (got it on sale, lol), and whatever laptop/computer I get my hands on.\
 \
 _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in (use *sudo* if needed).\
 \
