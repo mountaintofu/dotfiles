@@ -22,7 +22,7 @@ This is a somewhat comprehensive repository to keep track of what I've done to m
   
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
   
-- "xfce4-terminal --drop-down" + <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>. (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.)
+- "xfce4-terminal --drop-down" (SUPER + Z) + <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>. (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.)
 ![](	/../main/screenshots/minimal-tokyo.png)
 
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
@@ -63,7 +63,7 @@ This is a somewhat comprehensive repository to keep track of what I've done to m
 > "/$HOME/.config/fastfetch/![ascii.txt](	/../main/config/fastfetch/ascii.txt)", "![config.jsonc](	/../main/config/fastfetch/config.jsonc)") and <ins>neofetch</ins> ("/$HOME/.config/neofetch/![config.conf](	/../main/config/neofetch/config.conf)".
   
 - <ins>ibus</ins>/<ins>ibus-bamboo</ins>
-> (for certain special characters, though require a restart after every long usage: _ibus restart_).
+> (for certain special characters, though require a restart after every long usage: _ibus restart_). Keyboard shortcut: Alt + X.
   
 - <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> (![installation](https://wiki.archlinux.org/title/Wine#Installation)) for Windows' games compatibility.
   
