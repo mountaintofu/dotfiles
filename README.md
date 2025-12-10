@@ -2,13 +2,13 @@
 
 ### Current setup (Arch Linux, XFCE4, X11):
 
-![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
-
 > Hardware: Lexar SL300 1TB (got it on sale, lol), and whatever laptop/computer I got my hands on.
 >
 > ( _/usr/share/themes/_ and _/usr/share/icons/_ are where to put themes and icons in. )
 >
 > [ There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)). ]
+
+![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 
 This is a repository to keep track of what I've done to my system.
 - TNO* theme.
@@ -28,6 +28,7 @@ This is a repository to keep track of what I've done to my system.
 - ![quicksw.sh*](	/../main/config/quickwg.sh) (quick script that depends on wireguard and proton-vpn, don't forget to put its link in _/.local/bin/_)
 - I'll add more if I remember...
 
+
 ### Miscellaneous (chucking in some packages I installed).
 - <ins>tmatrix</ins> (I like the matrix-trilogy).
 - <ins>yazi</ins> (CLI alternative to my current File Manager).
@@ -41,6 +42,7 @@ This is a repository to keep track of what I've done to my system.
 - <ins>VLC</ins> and <ins>mpv</ins> (for playing media)
 - <ins>Mousepad</ins> and <ins>VSCodium</ins>.
 - <ins>GIMP</ins> for image editing and <ins>Viewnior</ins> for viewing images.
+
 
 ## Things to consider in the future:
 - Make the repo tidier.
