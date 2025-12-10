@@ -18,9 +18,8 @@ There are also other systems I've had on USBs and microSDs from years back (alre
 
 This is a somewhat comprehensive tutorial repository to keep track of what I've done to my system, I guess. Copy whatever you want.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
-```
-There are gaps between windows. Window-tiling are stock, binded in "Keyboard Shortcut".
-```
+> There are gaps between windows. Window-tiling are stock, binded in "Keyboard Shortcut".
+
 
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
   
@@ -59,17 +58,14 @@ There are gaps between windows. Window-tiling are stock, binded in "Keyboard Sho
 - <ins>yazi</ins>. (CLI alternative to Thunar.)
   
 - <ins>cbonsai</ins>.
-```
-To pretend I'm an old man sipping tea and relax, of course.
-```
+> To pretend I'm an old man sipping tea and relax, of course.
 
 - <ins>btop</ins>, <ins>fastfetch</ins> 
 > "/$HOME/.config/fastfetch/![ascii.txt](	/../main/config/fastfetch/ascii.txt)", "![config.jsonc](	/../main/config/fastfetch/config.jsonc)") and <ins>neofetch</ins> ("/$HOME/.config/neofetch/![config.conf](	/../main/config/neofetch/config.conf)".
   
 - <ins>IBus</ins>/<ins>IBus-Bamboo</ins>
-```
-(for certain special characters, though require a restart after every long usage: _ibus restart_).
-```
+> (for certain special characters, though require a restart after every long usage: _ibus restart_).
+
 
 - <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> (![installation](https://wiki.archlinux.org/title/Wine#Installation)) for Windows' games compatibility.
   
@@ -99,7 +95,8 @@ Currently using:
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have full Wayland support first).
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
-> ### Keyboard Shortcuts:
+>[!NOTE]
+> #### Keyboard Shortcuts:
 > - <ins>Tile Left</ins>: Alt + Left
 > - <ins>Tile Right</ins>: Alt + Right
 > - <ins>Tile Up (Wide)</ins>: Alt + Up
