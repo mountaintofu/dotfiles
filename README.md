@@ -59,7 +59,8 @@ This is a repository to keep track of what I've done to my system.
   
 - <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> for Windows' games compatibility.
   
-- <ins>LM Studio</ins> for playing with AI (Deepseek R1 0528 Qwen3 8B Q8_0, Qwen3 4B Thinking 2507 Q4_K_H, Qwen2.5 Coder 7B Instruct Q4_K_M, Qwen2.5 Coder 14B Q4_K_M).
+- <ins>LM Studio</ins> for playing with AI.
+> (Deepseek R1 0528 Qwen3 8B Q8_0, Qwen3 4B Thinking 2507 Q4_K_H, Qwen2.5 Coder 7B Instruct Q4_K_M, Qwen2.5 Coder 14B Q4_K_M.)
   
 - <ins>LibreOffice</ins>.
   
