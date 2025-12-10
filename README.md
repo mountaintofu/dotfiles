@@ -12,7 +12,7 @@
 
 This is a repository to keep track of what I've done to my system.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
-- xfce4-panel, genmon scripts* (_windowTitle.sh_, _vtec.sh_, _batteryBar.sh_, _presentationMode.sh_).
+- xfce4-panel, custom genmon scripts (![windowTitle.sh](	/../main/), ![vtec.sh](	/../main/), ![batteryBar.sh](	/../main/), ![presentationMode.sh](	/../main/)).
 - yay + zsh + oh-my-posh (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*).
 ![](	/../main/screenshots/minimal-tokyo.png)
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
