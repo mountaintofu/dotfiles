@@ -1,3 +1,6 @@
+![](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/screenshot.png)
+
+same as browser-startpage, but html-only.
 
 put everything into a .zip or .xpi file and import into Firefox/derived.
 \
