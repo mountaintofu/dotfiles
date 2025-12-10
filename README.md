@@ -8,9 +8,8 @@ _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and ico
 \
 There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).
 
-![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
-
 <p align="center">
+<img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-11_00-59-25.png" hspace="10"/>
 <img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-06_09-25-18.png" hspace="10"/>
 <img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-11_00-55-23.png" hspace="10"/>
 <img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-11_00-59-25.png" hspace="10"/>
