@@ -8,7 +8,7 @@ This is a repository to keep track of what I've done to my system.
 
 Put the themes into _/usr/share/themes/_ and icons to _/usr/share/icons/_.
 
-[There are also other systems I've had from years ago (check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).]
+[ There are also other systems I've had from years ago (check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)). ]
 
 
 - TNO* theme.
