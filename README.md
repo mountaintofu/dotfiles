@@ -24,7 +24,7 @@ This is a repository to keep track of what I've done to my system.
 
 ### Security and efficiency:
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
-- ufw (script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*).
+- ufw (configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*).
 - ![quicksw.sh](	/../main/config/quickwg.sh)* (quick script that depends on wireguard and proton-vpn, don't forget to put its link in _/.local/bin/_)
 - I'll add more if I remember...
 
