@@ -16,8 +16,9 @@ There are also other systems I've had on USBs and microSDs from years back (alre
 
 </p>
 
-This is a somewhat comprehensive repository to keep track of what I've done to my system and tutorial I guess.
-- ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
+This is a somewhat comprehensive tutorial repository to keep track of what I've done to my system, I guess. Copy whatever you want.
+- ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* "gapped"-theme.
+> There are gaps between windows.
   
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
   
