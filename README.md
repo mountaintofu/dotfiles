@@ -23,7 +23,6 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
   
 - "xfce4-terminal --drop-down" + <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>. (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.)
-> *IBus* shortcut: SUPER/"Windows Key" + Z.
 ![](	/../main/screenshots/minimal-tokyo.png)
 
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
@@ -101,7 +100,8 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 > - Tile Up(Right): Alt + '
 > - Tile Down(Left): Alt + ,
 > - Tile Down(Right): Alt + .
-> - Fullscreen: Alt + / 
+> - Fullscreen: Alt + /
+> - *IBus* shortcut: SUPER/"Windows Key" + Z.
 >
 > *: customed to fit my tastes and needs, duh.\
 <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
