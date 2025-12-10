@@ -31,7 +31,9 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 - ![modified-otis-darker](	/../main/xfce4-themes/themes/modified-otis-darker/)*.
   
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
-  
+
+- ![ocean-sound-theme](https://github.com/KDE/ocean-sound-theme).
+
 - ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
 > Theme ![collections](https://github.com/Jacksaur/Gorgeous-GRUB/tree/main) (Gorgeous-GRUB).\
 > ![Installation](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) and 2nd ![link](	/../main/grub-themes/Installation.md).
