@@ -4,7 +4,7 @@
 
 > Hardware: Lexar SL300 1TB (got it on sale, lol), and whatever laptop/computer I got my hands on.
 >
-> ( "_/usr/share/themes/_" and "_/usr/share/icons/_" are where to put themes and icons in. )
+> ( _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in. )
 >
 > [ There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)). ]
 
@@ -25,7 +25,7 @@ This is a repository to keep track of what I've done to my system.
 ### Security and efficiency:
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
 - ufw (configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*).
-- ![quicksw.sh](	/../main/config/quickwg.sh)* [ depends on _WireGuard_ (available on AUR) and _Proton VPN_ (just create an account and check for WG's config files there, remember to extend the files expiration dates), don't forget to put its/quicksw.sh link in "_/.local/bin/_" ]
+- ![quicksw.sh](	/../main/config/quickwg.sh)* [ depends on _WireGuard_ (available on AUR) and _Proton VPN_ (just create an account and check for WG's config files there, remember to extend the files expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_ ]
 - I'll add more if I remember...
 
 
