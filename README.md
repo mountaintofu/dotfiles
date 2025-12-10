@@ -14,11 +14,11 @@ This is a repository to keep track of what I've done to my system.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
   
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts 
-> ![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).
+>> ![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).
   
 - <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>.
-> ![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*).
-![](	/../main/screenshots/minimal-tokyo.png).
+>> ![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.
+![](	/../main/screenshots/minimal-tokyo.png)
 
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
   
@@ -26,41 +26,43 @@ This is a repository to keep track of what I've done to my system.
   
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
   
-- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme. (![installation tutorial](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) and ![backup link](	/../main/grub-themes/Installation.md))
+- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme. 
+>> ![installation tutorial](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) and ![backup link](	/../main/grub-themes/Installation.md).
   
 - ![Librewolf/Firefox extension](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)*.
 
 
 ### Security and efficiency:
 - <ins>tlp</ins> (default=_auto_) + <ins>cpupower-gui</ins>
-> (default=![Bottle](	/../main/config/cpupower_gui/cpg-Bottle.profile)) for ![vtec.sh](	/../main/config/genmon/vtec.sh) (Performance/Bottle mode).
+>> (default=![Bottle](	/../main/config/cpupower_gui/cpg-Bottle.profile)) for ![vtec.sh](	/../main/config/genmon/vtec.sh) (Performance/Bottle mode).
 - <ins>ufw</ins> 
-> (configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*).
+>> (configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*).
 - ![quickwg.sh](	/../main/config/quickwg.sh)* 
-> [ depends on <ins>WireGuard</ins> (available on _AUR_) and <ins>Proton VPN</ins> (just create an account and check for WG's config files there, remember to extend the files year-long expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_ ]
+>> [ depends on <ins>WireGuard</ins> (available on _AUR_) and <ins>Proton VPN</ins> (just create an account and check for WG's config files there, remember to extend the files year-long expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_ ]
 - I'll add more if I remember...
 
 
 ### Miscellaneous (chucking in some packages I installed).
 - <ins>tmatrix</ins>.
-> I like the matrix-trilogy.
+>> I like the matrix-trilogy.
   
 - <ins>yazi</ins>.
-> CLI alternative to <ins>Thunar</ins>.
+>> CLI alternative to <ins>Thunar</ins>.
   
 - <ins>cbonsai</ins>.
-> to pretend I'm an old man and relax, of course.
+>> to pretend I'm an old man and relax, of course.
   
 - <ins>btop</ins>, <ins>fastfetch</ins> 
-> "/$HOME/.config/fastfetch/![ascii.txt](	/../main/config/fastfetch/ascii.txt)", "![config.jsonc](	/../main/config/fastfetch/config.jsonc)") and <ins>neofetch</ins> ("/$HOME/.config/neofetch/![config.conf](	/../main/config/neofetch/config.conf)".
+>> "/$HOME/.config/fastfetch/![ascii.txt](	/../main/config/fastfetch/ascii.txt)", "![config.jsonc](	/../main/config/fastfetch/config.jsonc)") and <ins>neofetch</ins> ("/$HOME/.config/neofetch/![config.conf](	/../main/config/neofetch/config.conf)".
   
-- <ins>ibus</ins>/<ins>ibus-bamboo</ins> (for certain special characters, though require a restart after every long usage: _ibus restart_).
+- <ins>ibus</ins>/<ins>ibus-bamboo</ins>
+>> (for certain special characters, though require a restart after every long usage: _ibus restart_).
   
 - <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> for Windows' games compatibility.
   
 - <ins>LM Studio</ins> for playing with AI (Deepseek R1 0528 Qwen3 8B Q8_0, Qwen3 4B Thinking 2507 Q4_K_H, Qwen2.5 Coder 7B Instruct Q4_K_M, Qwen2.5 Coder 14B Q4_K_M).
   
-- <ins>LibreOffice</ins> (for office work, duh).
+- <ins>LibreOffice</ins>.
   
 - <ins>Xtreme Download Manager</ins>.
   
