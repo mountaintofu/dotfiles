@@ -38,7 +38,7 @@ Put the themes into _/usr/share/themes/_ and icons to _/usr/share/icons/_.
 - <ins>LM Studio</ins> for playing with AI.
 - <ins>LibreOffice</ins> (for office work, duh).
 - <ins>Xtreme Download Manager</ins>.
-- VLC and mpv (for playing media)
+- <ins>VLC</ins> and <ins>mpv</ins> (for playing media)
 - <ins>mousepad</ins> and <ins>VSCodium</ins>.
 - <ins>GIMP</ins> for image editing and <ins>Viewnior</ins> for viewing images.
 
