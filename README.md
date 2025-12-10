@@ -48,7 +48,7 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 - ![quickwg.sh](	/../main/config/quickwg.sh)* (require *sudo*.) 
 > depends on <ins>WireGuard</ins> (available on _AUR_) and <ins>Proton VPN</ins> (just create an account and check for WG's config files there, remember to extend the files year-long expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_.
 
-- I'll add more if I remember...
+> #### I'll add more if I remember...
 
 
 ### Miscellaneous (chucking in some packages I installed).
