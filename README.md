@@ -18,7 +18,16 @@ There are also other systems I've had on USBs and microSDs from years back (alre
 
 This is a somewhat comprehensive tutorial repository to keep track of what I've done to my system, I guess. Copy whatever you want.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* "gapped"-theme.
-> There are gaps between windows.
+> There are gaps between windows. Window-tiling are stock, binded in "Keyboard Shortcut":
+> - Tile Left: Alt + Left
+> - Tile Right: Alt + Right
+> - Tile Up(Wide): Alt + Up
+> - Tile Down(Wide): Alt + Down
+> - Tile Up(Left): Alt + ;
+> - Tile Up(Right): Alt + '
+> - Tile Down(Left): Alt + ,
+> - Tile Down(Right): Alt + .
+> - Fullscreen: Alt + /
   
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
   
