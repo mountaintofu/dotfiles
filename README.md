@@ -36,7 +36,7 @@ This is a repository to keep track of what I've done to my system.
 - <ins>btop</ins>, <ins>fastfetch</ins> (![ascii.txt](	/../main/config/fastfetch/ascii.txt), ![config.jsonc](	/../main/config/fastfetch/config.jsonc)) and <ins>neofetch</ins> (![config](	/../main/config/neofetch/config.conf)).
 - <ins>ibus</ins>/<ins>ibus-bamboo</ins> (for certain special characters, though require a restart after every long usage: _ibus restart_).
 - <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> for Windows' games compatibility.
-- <ins>LM Studio</ins> for playing with AI.
+- <ins>LM Studio</ins> for playing with AI (Deepseek R1 0528 Qwen3 8B Q8_0, Qwen3 4B Thinking 2507 Q4_K_H, Qwen2.5 Coder 7B Instruct Q4_K_M, Qwen2.5 Coder 14B Q4_K_M).
 - <ins>LibreOffice</ins> (for office work, duh).
 - <ins>Xtreme Download Manager</ins>.
 - <ins>VLC</ins> and <ins>mpv</ins> (for playing media)
