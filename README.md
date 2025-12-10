@@ -18,7 +18,7 @@ This is a repository to keep track of what I've done to my system.
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
 - ![modified-otis-darker](	/../main/xfce4-themes/themes/modified-otis-darker/)*.
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
-- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
+- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme. (![tutorial for installing a theme](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md, ![backup](	/../main/)))
 - ![Librewolf/Firefox extension](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)*.
 
 
@@ -36,7 +36,7 @@ This is a repository to keep track of what I've done to my system.
   
 - <ins>cbonsai</ins> (to pretend I'm an old man and relax, of course).
   
-- <ins>btop</ins>, <ins>fastfetch</ins> (![ascii.txt](	/../main/config/fastfetch/ascii.txt), ![config.jsonc](	/../main/config/fastfetch/config.jsonc)) and <ins>neofetch</ins> (![config](	/../main/config/neofetch/config.conf)).
+- <ins>btop</ins>, <ins>fastfetch</ins> (![/$HOME/.config/fastfetch/ascii.txt](	/../main/config/fastfetch/ascii.txt), ![config.jsonc](	/../main/config/fastfetch/config.jsonc)) and <ins>neofetch</ins> (![/$HOME/.config/neofetch/config.conf](	/../main/config/neofetch/config.conf)).
   
 - <ins>ibus</ins>/<ins>ibus-bamboo</ins> (for certain special characters, though require a restart after every long usage: _ibus restart_).
   
