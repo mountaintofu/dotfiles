@@ -13,8 +13,7 @@
 This is a repository to keep track of what I've done to my system.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
   
-- <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts 
-> ![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).
+- <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
   
 - <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>. (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.)
 ![](	/../main/screenshots/minimal-tokyo.png)
