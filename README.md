@@ -4,7 +4,7 @@
 
 > Hardware: <ins>Lexar SL300 1TB</ins> (got it on sale, lol), and whatever laptop/computer I got my hands on.
 >
-> _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in.
+> _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in (use *sudo* if needed).
 >
 > There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).
 
@@ -31,13 +31,13 @@ This is a repository to keep track of what I've done to my system.
 
 
 ### Security and efficiency:
-- <ins>tlp</ins> (default=_auto_) + <ins>cpupower-gui</ins>
+- <ins>tlp</ins> (default=_auto_) + <ins>cpupower-gui</ins>.
 > (default=![Bottle](	/../main/config/cpupower_gui/cpg-Bottle.profile)) for ![vtec.sh](	/../main/config/genmon/vtec.sh) (Performance/Bottle mode).
 
-- <ins>ufw</ins> 
-> (configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*).
+- <ins>ufw</ins>.
+> configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*. Require *sudo*.
 
-- ![quickwg.sh](	/../main/config/quickwg.sh)* 
+- ![quickwg.sh](	/../main/config/quickwg.sh)* (require *sudo*.) 
 > [ depends on <ins>WireGuard</ins> (available on _AUR_) and <ins>Proton VPN</ins> (just create an account and check for WG's config files there, remember to extend the files year-long expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_ ]
 
 - I'll add more if I remember...
