@@ -92,16 +92,16 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
 > ### Keyboard Shortcuts:
-> - Tile Left: Alt + Left
-> - Tile Right: Alt + Right
-> - Tile Up(Wide): Alt + Up
-> - Tile Down(Wide): Alt + Down
-> - Tile Up(Left): Alt + ;
-> - Tile Up(Right): Alt + '
-> - Tile Down(Left): Alt + ,
-> - Tile Down(Right): Alt + .
-> - Fullscreen: Alt + /
-> - IBus Preference/Keyboard Shortcut: SUPER/"Windows Key" + Z.
+> - <ins>Tile Left</ins>: Alt + Left
+> - <ins>Tile Right</ins>: Alt + Right
+> - <ins>Tile Up (Wide)</ins>: Alt + Up
+> - <ins>Tile Down (Wide)</ins>: Alt + Down
+> - <ins>Tile Up (Left)</ins>: Alt + ;
+> - <ins>Tile Up (Right)</ins>: Alt + '
+> - <ins>Tile Down (Left)</ins>: Alt + ,
+> - <ins>Tile Down (Right)</ins>: Alt + .
+> - <ins>Fullscreen</ins>: Alt + /
+> - <ins>IBus Preference/Keyboard Shortcut</ins>: SUPER/"Windows Key" + Z.
 >
 > *: customed to fit my tastes and needs, duh.\
 <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
