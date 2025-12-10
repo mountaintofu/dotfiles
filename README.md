@@ -88,7 +88,7 @@ This is a somewhat comprehensive repository to keep track of what I've done to m
 ## Things to consider in the future:
 - Make the repo tidier.
 - Simple shell script for restoration (or just install a package for that, ya dum dum) in case of a potential system nuking.
-- Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first).
+- Removing reliance on xorg and X11 (waiting for XFCE4 to have full Wayland support first).
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
 > *: customed to fit my tastes and needs, duh.\
