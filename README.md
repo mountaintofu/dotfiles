@@ -8,7 +8,7 @@ This is a repository to keep track of what I've done to my system.
 
 > Hardware: Lexar SL300 1TB (got it on sale, lol), and whatever laptop/computer I got my hands on.
 
-> Put the themes into _/usr/share/themes/_ and icons to _/usr/share/icons/_.
+> Themes: _/usr/share/themes/_ and icons: _/usr/share/icons/_.
 
 > [ There are also other systems I've had from years ago (check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)). ]
 
