@@ -19,20 +19,11 @@ There are also other systems I've had on USBs and microSDs from years back (alre
 This is a somewhat comprehensive tutorial repository to keep track of what I've done to my system, I guess. Copy whatever you want.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* "gapped"-theme.
 > There are gaps between windows. Window-tiling are stock, binded in "Keyboard Shortcut":
-> - Tile Left: Alt + Left
-> - Tile Right: Alt + Right
-> - Tile Up(Wide): Alt + Up
-> - Tile Down(Wide): Alt + Down
-> - Tile Up(Left): Alt + ;
-> - Tile Up(Right): Alt + '
-> - Tile Down(Left): Alt + ,
-> - Tile Down(Right): Alt + .
-> - Fullscreen: Alt + /
   
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
   
 - "xfce4-terminal --drop-down" + <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>. (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.)
-> Keyboard shortcut (within *ibus*): SUPER/"Windows Key" + Z.
+> *IBus* shortcut: SUPER/"Windows Key" + Z.
 ![](	/../main/screenshots/minimal-tokyo.png)
 
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
@@ -72,7 +63,7 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 - <ins>btop</ins>, <ins>fastfetch</ins> 
 > "/$HOME/.config/fastfetch/![ascii.txt](	/../main/config/fastfetch/ascii.txt)", "![config.jsonc](	/../main/config/fastfetch/config.jsonc)") and <ins>neofetch</ins> ("/$HOME/.config/neofetch/![config.conf](	/../main/config/neofetch/config.conf)".
   
-- <ins>ibus</ins>/<ins>ibus-bamboo</ins>
+- <ins>IBus</ins>/<ins>IBus-Bamboo</ins>
 > (for certain special characters, though require a restart after every long usage: _ibus restart_). Keyboard shortcut: Alt + X.
   
 - <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> (![installation](https://wiki.archlinux.org/title/Wine#Installation)) for Windows' games compatibility.
@@ -101,5 +92,16 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have full Wayland support first).
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
+> ### Keyboard Shortcuts:
+> - Tile Left: Alt + Left
+> - Tile Right: Alt + Right
+> - Tile Up(Wide): Alt + Up
+> - Tile Down(Wide): Alt + Down
+> - Tile Up(Left): Alt + ;
+> - Tile Up(Right): Alt + '
+> - Tile Down(Left): Alt + ,
+> - Tile Down(Right): Alt + .
+> - Fullscreen: Alt + / 
+>
 > *: customed to fit my tastes and needs, duh.\
 <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
