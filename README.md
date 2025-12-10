@@ -10,7 +10,7 @@ There are also other systems I've had on USBs and microSDs from years back (alre
 
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 
-This is a repository to keep track of what I've done to my system.
+This is a somewhat comprehensive repository to keep track of what I've done to my system and tutorial I guess.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
   
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
