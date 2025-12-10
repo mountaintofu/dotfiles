@@ -12,13 +12,20 @@
 
 This is a repository to keep track of what I've done to my system.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
+  
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh)).
+  
 - <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins> (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*).
 ![](	/../main/screenshots/minimal-tokyo.png)
+
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
+  
 - ![modified-otis-darker](	/../main/xfce4-themes/themes/modified-otis-darker/)*.
+  
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
-- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme. (![tutorial for installing a theme](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md, ![backup](	/../main/)))
+  
+- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme. (![installation tutorial](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md, ![backup link](	/../main/grub-themes/Installation.md))
+  
 - ![Librewolf/Firefox extension](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)*.
 
 
