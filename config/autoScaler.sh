@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Auto Display Scale Script for XFCE4
 # Adjusts scaling based on detected resolution
