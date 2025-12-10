@@ -8,6 +8,9 @@ This is a repository to keep track of what I've done to my system.
 
 Put the themes into _/usr/share/themes/_ and icons to /usr/share/icons/_
 
+[There are also other systems I've had from years ago (check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).]
+
+
 - TNO* theme.
 - xfce4-panel, genmon scripts* (_windowTitle.sh_, _vtec.sh_, _batteryBar.sh_, _presentationMode.sh_).
 - yay + zsh + oh-my-posh (_minimal-tokyo.omp.json_*).
@@ -32,8 +35,6 @@ Put the themes into _/usr/share/themes/_ and icons to /usr/share/icons/_
 - Simple shell script for restoration (or just install a package for that, ya dum dum) in case of a potential system nuking.
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first).
 - Try not to be an idiot and keep your head high (also, be extra careful).
-
-[There are also other systems I've had from years ago (check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).]
 
 <br/>
 *: custom (to fit my taste, duh.)<br/>
