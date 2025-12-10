@@ -10,7 +10,7 @@ This is a repository to keep track of what I've done to my system.
 >
 > _/usr/share/themes/_ and _/usr/share/icons/_ are where to put themes and icons in.
 >
-> [ There are also other systems I've had from years ago (check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)). ]
+> [ There are also other systems I've had on USBs and microSDs from years back (already disposed of them for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)). ]
 
 
 - TNO* theme.
