@@ -95,6 +95,7 @@ Currently using:
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have full Wayland support first).
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
+
 >[!NOTE]
 > #### Keyboard Shortcuts:
 > - <ins>Tile Left</ins>: Alt + Left
