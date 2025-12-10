@@ -11,21 +11,21 @@
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 
 This is a repository to keep track of what I've done to my system.
-- ![TNO*](	/../main/xfce4-themes/themes/TNO.zip) theme.
+- ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
 - xfce4-panel, genmon scripts* (_windowTitle.sh_, _vtec.sh_, _batteryBar.sh_, _presentationMode.sh_).
 - yay + zsh + oh-my-posh (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*).
 ![](	/../main/screenshots/minimal-tokyo.png)
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
-- ![modified-otis-darker*](	/../main/xfce4-themes/themes/modified-otis-darker/).
+- ![modified-otis-darker](	/../main/xfce4-themes/themes/modified-otis-darker/)*.
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
 - ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
-- ![Librewolf/Firefox extension*](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/).
+- ![Librewolf/Firefox extension](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)*.
 
 
 ### Security and efficiency:
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
-- ufw (script: _ufw-paranoid.sh_*).
-- ![quicksw.sh*](	/../main/config/quickwg.sh) (quick script that depends on wireguard and proton-vpn, don't forget to put its link in _/.local/bin/_)
+- ufw (script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*).
+- ![quicksw.sh](	/../main/config/quickwg.sh)* (quick script that depends on wireguard and proton-vpn, don't forget to put its link in _/.local/bin/_)
 - I'll add more if I remember...
 
 
