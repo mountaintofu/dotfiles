@@ -25,10 +25,22 @@ Put the themes into _/usr/share/themes/_ and icons to _/usr/share/icons/_.
 ### Security and efficiency:
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
 - ufw (script: _ufw-paranoid.sh_*).
-- cbonsai (to pretend I'm an old man and relax, of course)
 - ![quicksw.sh*](	/../main/config/quickwg.sh) (quick script that depends on wireguard and proton-vpn, don't forget to put its link in _/.local/bin/_)
 - I'll add more if I remember...
 
+### Miscellaneous (chucking in some packages I use daily).
+- tmatrix (I like the matrix-trilogy).
+- yazi (CLI alternative to my current File Manager).
+- cbonsai (to pretend I'm an old man and relax, of course).
+- _btop_, _htop_, _fastfetch_ and _neofetch_ (why not?)
+- ibus/ibus-bamboo (for certain special characters, though require a restart after every long usage: _ibus restart_).
+- VMWare-Workstation/Player and Wine-Staging for Windows' games compatibility.
+- LM Studio for playing with AI.
+- LibreOffice (for office work, duh).
+- Xtreme Download Manager
+- VLC and mpv (for playing media)
+- mousepad and VSCodium.
+- GIMP for image editing and Viewnior for viewing images.
 
 ## Things to consider in the future:
 - Make the repo tidier.
