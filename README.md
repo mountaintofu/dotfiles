@@ -32,10 +32,10 @@ This is a repository to keep track of what I've done to my system.
 
 ### Security and efficiency:
 - <ins>tlp</ins> (default=_auto_) + <ins>cpupower-gui</ins>.
-> (default=![Bottle](	/../main/config/cpupower_gui/cpg-Bottle.profile)) for ![vtec.sh](	/../main/config/genmon/vtec.sh) (Performance/Bottle mode).
+> (default=![Bottle](	/../main/config/cpupower_gui/cpg-Bottle.profile), 510 MHz for all CPUs) for ![vtec.sh](	/../main/config/genmon/vtec.sh) (Performance/Bottle mode).
 
 - <ins>ufw</ins>.
-> configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*. Require *sudo*.
+> configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*. (Require *sudo*.)
 
 - ![quickwg.sh](	/../main/config/quickwg.sh)* (require *sudo*.) 
 > [ depends on <ins>WireGuard</ins> (available on _AUR_) and <ins>Proton VPN</ins> (just create an account and check for WG's config files there, remember to extend the files year-long expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_ ]
