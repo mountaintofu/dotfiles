@@ -6,7 +6,7 @@
 \
 _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in (use *sudo* if needed).\
 \
-There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).\
+There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).
 
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 
