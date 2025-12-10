@@ -5,6 +5,9 @@
 This is a repository to keep track of what I've done to my system.
 
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
+
+Put the themes into _/usr/share/themes/_ and icons to /usr/share/icons/_
+
 - TNO* theme.
 - xfce4-panel, genmon scripts* (_windowTitle.sh_, _vtec.sh_, _batteryBar.sh_, _presentationMode.sh_).
 - yay + zsh + oh-my-posh (_minimal-tokyo.omp.json_*).
@@ -14,6 +17,7 @@ This is a repository to keep track of what I've done to my system.
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
 - ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
 - ![Librewolf/Firefox extension*](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/).
+
 
 ### Security and efficiency:
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
