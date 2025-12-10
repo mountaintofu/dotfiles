@@ -26,7 +26,7 @@ This is a repository to keep track of what I've done to my system.
   
 - ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
 > Theme ![collections](https://github.com/Jacksaur/Gorgeous-GRUB/tree/main).\
-> ![Installation](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) and backup ![link](	/../main/grub-themes/Installation.md).
+> ![Installation](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) and 2nd ![link](	/../main/grub-themes/Installation.md).
   
 - ![Librewolf/Firefox extension](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)*.
 
