@@ -1,6 +1,6 @@
 ## Some tinkering I did for my Linux machines.
 
-### <ins>Current setup</ins> (Arch Linux, XFCE4, X11).
+### <ins>Current setup</ins> (Arch Linux, XFCE4, X11):
 
 This is a repository to keep track of what I've done to my system.
 
@@ -12,9 +12,13 @@ This is a repository to keep track of what I've done to my system.
 - Tela-circle-blue icons.
 - modified-otis-darker*.
 - Bibata-Modern-Ice mouse.
-- _MilkGrub_ theme.
+- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
+- ![Librewolf/Firefox extension*.](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)
+
+### Some other scripts:
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
 - ufw (script: _ufw-paranoid.sh_*).
+- 
 
 There are also other systems I've had from years ago (check _screenshots_) and a dumb one (_XFWM4-Standalone_).
 
