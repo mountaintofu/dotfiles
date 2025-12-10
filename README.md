@@ -32,7 +32,8 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
   
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
 
-- ![ocean-sound-theme](https://github.com/KDE/ocean-sound-theme).
+- KDE ![ocean-sound-theme](https://github.com/KDE/ocean-sound-theme). 
+> To turn sound on: Appearance/Settings/Enable event sounds.
 
 - ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
 > Theme ![collections](https://github.com/Jacksaur/Gorgeous-GRUB/tree/main) (Gorgeous-GRUB).\
