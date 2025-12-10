@@ -1,4 +1,4 @@
-## Some tinkering I did for my Linux machines.
+# Some tinkering I did for my Linux machines.
 
 ### <ins>Current setup</ins> (Arch Linux, XFCE4, X11):
 
@@ -42,7 +42,7 @@ Put the themes into _/usr/share/themes/_ and icons to _/usr/share/icons/_.
 - <ins>Mousepad</ins> and <ins>VSCodium</ins>.
 - <ins>GIMP</ins> for image editing and <ins>Viewnior</ins> for viewing images.
 
-## Things to consider in the future:
+# Things to consider in the future:
 - Make the repo tidier.
 - Simple shell script for restoration (or just install a package for that, ya dum dum) in case of a potential system nuking.
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first).
