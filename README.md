@@ -32,7 +32,7 @@ This is a repository to keep track of what I've done to my system.
 ### Miscellaneous (chucking in some packages I installed).
 - <ins>tmatrix</ins> (I like the matrix-trilogy).
   
-- <ins>yazi</ins> (CLI alternative to my current File Manager).
+- <ins>yazi</ins> (CLI alternative to <ins>Thunar</ins>).
   
 - <ins>cbonsai</ins> (to pretend I'm an old man and relax, of course).
   
