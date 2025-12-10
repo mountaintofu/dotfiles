@@ -11,7 +11,7 @@
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 
 This is a repository to keep track of what I've done to my system.
-- TNO* theme.
+- ![TNO*](	/../main/xfce4-themes/themes/TNO.zip) theme.
 - xfce4-panel, genmon scripts* (_windowTitle.sh_, _vtec.sh_, _batteryBar.sh_, _presentationMode.sh_).
 - yay + zsh + oh-my-posh (_minimal-tokyo.omp.json_*).
 ![](	/../main/screenshots/minimal-tokyo.png)
