@@ -102,6 +102,6 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 > - <ins>Tile Down (Right)</ins>: Alt + .
 > - <ins>Fullscreen</ins>: Alt + /
 > - <ins>IBus Preference/Keyboard Shortcut</ins>: SUPER/"Windows Key" + Z.
->
+
 > *: customed to fit my tastes and needs, duh.\
 <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
