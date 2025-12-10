@@ -10,6 +10,13 @@ There are also other systems I've had on USBs and microSDs from years back (alre
 
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 
+<p align="center">
+<img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-06_09-25-18.png" hspace="10"/>
+<img height="192" width="341" src="https://github.com/diws1/xfce/blob/main/screenshot/xfce%20aestethic.png" hspace="10"/>
+<img height="192" width="341" src="https://github.com/diws1/xfce/blob/main/screenshot/xfce%20blumon.png" hspace="10"/>
+
+</p>
+
 This is a somewhat comprehensive repository to keep track of what I've done to my system and tutorial I guess.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
   
