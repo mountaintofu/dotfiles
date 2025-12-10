@@ -101,7 +101,7 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 > - Tile Down(Left): Alt + ,
 > - Tile Down(Right): Alt + .
 > - Fullscreen: Alt + /
-> - *IBus* shortcut (IBus Preference/Keyboard Shortcut): SUPER/"Windows Key" + Z.
+> - IBus Preference/Keyboard Shortcut: SUPER/"Windows Key" + Z.
 >
 > *: customed to fit my tastes and needs, duh.\
 <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
