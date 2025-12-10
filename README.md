@@ -19,7 +19,7 @@ This is a repository to keep track of what I've done to my system.
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
 - ufw (script: _ufw-paranoid.sh_*).
 - cbonsai (to pretend I'm an old man and relax, of course)
-- ![quicksw.sh*](	/../main/config/quickwg.sh) (quick scripte that depends on wireguard and proton-vpn, don't forget to put its link in _/.local/bin/_)
+- ![quicksw.sh*](	/../main/config/quickwg.sh) (quick script that depends on wireguard and proton-vpn, don't forget to put its link in _/.local/bin/_)
 - I'll add more if I remember...
 
 
