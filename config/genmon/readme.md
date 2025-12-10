@@ -1,4 +1,4 @@
-v-tec.sh 
+vtec.sh 
 ![](	/../main/screenshots/v-tec_screenshot.png), ![](	/../main/screenshots/v-tec2-screenshot.png)
 
 batteryBar.sh (more screenshots but I'm too lazy to take them) 
