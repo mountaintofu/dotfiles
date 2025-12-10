@@ -9,7 +9,7 @@ This is a repository to keep track of what I've done to my system.
 - xfce4-panel, genmon scripts* (_windowTitle.sh_, _vtec.sh_, _batteryBar.sh_, _presentationMode.sh_).
 - yay + zsh + oh-my-posh (_minimal-tokyo.omp.json_*).
 ![](	/../main/screenshots/minimal-tokyo.png)
-- Tela-circle-blue icons.
+- ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
 - modified-otis-darker*.
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
 - ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
@@ -23,6 +23,7 @@ This is a repository to keep track of what I've done to my system.
 There are also other systems I've had from years ago (check _screenshots_) and a dumb one (_XFWM4-Standalone_).
 
 ### Things to consider in the future:
+- Combine Tokyo-Night theme with modified-otis.
 - Make the repo tidier.
 - Simple shell script for restoration in case of a potential system nuking.
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first).
