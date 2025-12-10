@@ -29,18 +29,18 @@ Put the themes into _/usr/share/themes/_ and icons to _/usr/share/icons/_.
 - I'll add more if I remember...
 
 ### Miscellaneous (chucking in some packages I use daily).
-- tmatrix (I like the matrix-trilogy).
-- yazi (CLI alternative to my current File Manager).
-- cbonsai (to pretend I'm an old man and relax, of course).
-- _btop_, _htop_, _fastfetch_ and _neofetch_ (why not?)
-- ibus/ibus-bamboo (for certain special characters, though require a restart after every long usage: _ibus restart_).
-- VMWare-Workstation/Player and Wine-Staging for Windows' games compatibility.
-- LM Studio for playing with AI.
-- LibreOffice (for office work, duh).
-- Xtreme Download Manager
+- <ins>tmatrix</ins> (I like the matrix-trilogy).
+- <ins>yazi</ins> (CLI alternative to my current File Manager).
+- <ins>cbonsai</ins> (to pretend I'm an old man and relax, of course).
+- <ins>btop</ins>, <ins>htop</ins>, <ins>fastfetch</ins> and <ins>neofetch</ins> (why not?)
+- <ins>ibus</ins>/<ins>ibus-bamboo</ins> (for certain special characters, though require a restart after every long usage: _ibus restart_).
+- <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> for Windows' games compatibility.
+- <ins>LM Studio</ins> for playing with AI.
+- <ins>LibreOffice</ins> (for office work, duh).
+- <ins>Xtreme Download Manager</ins>.
 - VLC and mpv (for playing media)
-- mousepad and VSCodium.
-- GIMP for image editing and Viewnior for viewing images.
+- <ins>mousepad</ins> and <ins>VSCodium</ins>.
+- <ins>GIMP</ins> for image editing and <ins>Viewnior</ins> for viewing images.
 
 ## Things to consider in the future:
 - Make the repo tidier.
