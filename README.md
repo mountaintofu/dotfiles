@@ -33,7 +33,7 @@ This is a repository to keep track of what I've done to my system.
 - <ins>tmatrix</ins> (I like the matrix-trilogy).
 - <ins>yazi</ins> (CLI alternative to my current File Manager).
 - <ins>cbonsai</ins> (to pretend I'm an old man and relax, of course).
-- <ins>btop</ins>, <ins>fastfetch</ins> and <ins>neofetch</ins> (why not?)
+- <ins>btop</ins>, <ins>fastfetch</ins> (![ascii.txt](	/../main/config/fastfetch/ascii.txt), ![config.jsonc](	/../main/config/fastfetch/config.jsonc)) and <ins>neofetch</ins> (![config](	/../main/config/neofetch/config.conf)).
 - <ins>ibus</ins>/<ins>ibus-bamboo</ins> (for certain special characters, though require a restart after every long usage: _ibus restart_).
 - <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> for Windows' games compatibility.
 - <ins>LM Studio</ins> for playing with AI.
