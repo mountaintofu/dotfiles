@@ -1,4 +1,4 @@
-# Some tinkering I did for my Linux machines.
+# Some tinkering I did for my Linux machine(s).
 
 ### Current setup (Arch Linux, XFCE4, X11):
 
