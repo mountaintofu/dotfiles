@@ -50,6 +50,6 @@ This is a repository to keep track of what I've done to my system.
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first).
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
-> *: custom (to fit my tastes and needs, duh.)
+> *: customed to fit my tastes and needs, duh.
 
 > <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
