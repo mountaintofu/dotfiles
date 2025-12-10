@@ -6,11 +6,11 @@ This is a repository to keep track of what I've done to my system.
 
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
 
-Hardware: Lexar SL300 1TB (got it on sale, lol), and whatever laptop/computer I got my hands on.
+<ins>Hardware</ins>: Lexar SL300 1TB (got it on sale, lol), and whatever laptop/computer I got my hands on.
 
-Put the themes into _/usr/share/themes/_ and icons to _/usr/share/icons/_.
+> Put the themes into _/usr/share/themes/_ and icons to _/usr/share/icons/_.
 
-[ There are also other systems I've had from years ago (check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)). ]
+> [ There are also other systems I've had from years ago (check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)). ]
 
 
 - TNO* theme.
@@ -50,7 +50,6 @@ Put the themes into _/usr/share/themes/_ and icons to _/usr/share/icons/_.
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first).
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
-<br/>
-*: custom (to fit my taste, duh.)<br/>
+> *: custom (to fit my taste, duh.)
 
-<sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
+> <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
