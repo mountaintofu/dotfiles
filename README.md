@@ -1,6 +1,6 @@
 # Some tinkering I did for my Linux machines.
 
-### <ins>Current setup</ins> (Arch Linux, XFCE4, X11):
+### Current setup (Arch Linux, XFCE4, X11):
 
 This is a repository to keep track of what I've done to my system.
 
