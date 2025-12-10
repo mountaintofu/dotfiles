@@ -24,8 +24,8 @@ This is a repository to keep track of what I've done to my system.
   
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
   
-- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme. 
-> ![installation](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) and backup ![link](	/../main/grub-themes/Installation.md).
+- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme. (![theme collections](https://github.com/Jacksaur/Gorgeous-GRUB/tree/main))
+> ![Installation](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) and backup ![link](	/../main/grub-themes/Installation.md).
   
 - ![Librewolf/Firefox extension](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)*.
 
