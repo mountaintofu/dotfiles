@@ -32,7 +32,7 @@ This is a repository to keep track of what I've done to my system.
 
 ### Security and efficiency:
 - <ins>tlp</ins> (default=_auto_) + <ins>cpupower-gui</ins>.
-> (default=![Bottle](	/../main/config/cpupower_gui/cpg-Bottle.profile), 510 MHz/CPU) for ![vtec.sh](	/../main/config/genmon/vtec.sh) (Performance/Bottle mode).
+> (default=![Bottle](	/../main/config/cpupower_gui/cpg-Bottle.profile), 510 MHz/CPU, powersaving) for ![vtec.sh](	/../main/config/genmon/vtec.sh) (Performance/Bottle mode).
 
 - <ins>ufw</ins>.
 > configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*. (Require *sudo*.)
