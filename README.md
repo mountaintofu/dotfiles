@@ -84,5 +84,5 @@ This is a repository to keep track of what I've done to my system.
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
 > *: customed to fit my tastes and needs, duh.
-
+>
 > <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
