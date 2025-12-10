@@ -3,7 +3,7 @@
 ### Current setup (Arch Linux, XFCE4, X11):
 
 > Hardware: <ins>Lexar SL300 1TB</ins> (got it on sale, lol), and whatever laptop/computer I got my hands on.
->
+> 
 > _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in (use *sudo* if needed).
 >
 > There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).
@@ -25,8 +25,7 @@ This is a repository to keep track of what I've done to my system.
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
   
 - ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
-> Theme ![collections](https://github.com/Jacksaur/Gorgeous-GRUB/tree/main).
->
+> Theme ![collections](https://github.com/Jacksaur/Gorgeous-GRUB/tree/main).\
 > ![Installation](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) and backup ![link](	/../main/grub-themes/Installation.md).
   
 - ![Librewolf/Firefox extension](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)*.
