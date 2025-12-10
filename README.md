@@ -30,7 +30,7 @@ This is a repository to keep track of what I've done to my system.
 - ![quicksw.sh*](	/../main/config/quickwg.sh) (quick script that depends on wireguard and proton-vpn, don't forget to put its link in _/.local/bin/_)
 - I'll add more if I remember...
 
-### Miscellaneous (chucking in some packages I use daily).
+### Miscellaneous (chucking in some packages I installed).
 - <ins>tmatrix</ins> (I like the matrix-trilogy).
 - <ins>yazi</ins> (CLI alternative to my current File Manager).
 - <ins>cbonsai</ins> (to pretend I'm an old man and relax, of course).
