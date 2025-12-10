@@ -5,7 +5,7 @@
 This is a repository to keep track of what I've done to my system.
 
 ![](	/../main/screenshots/Screenshot_2025-12-06_09-25-18.png)
-- Tokyo-Night theme.
+- TNO* theme.
 - xfce4-panel, genmon scripts* (_windowTitle.sh_, _vtec.sh_, _batteryBar.sh_, _presentationMode.sh_).
 - yay + zsh + oh-my-posh (_minimal-tokyo.omp.json_*).
 ![](	/../main/screenshots/minimal-tokyo.png)
@@ -30,6 +30,6 @@ There are also other systems I've had from years ago (check _screenshots_) and a
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
 <br/>
-*: custom<br/>
+*: custom (to fit my taste, duh.)<br/>
 
 <sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
