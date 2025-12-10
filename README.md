@@ -15,17 +15,17 @@ This is a repository to keep track of what I've done to my system.
 - ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
 - ![Librewolf/Firefox extension*](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/).
 
-### Some other scripts:
+### Security and efficiency:
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
 - ufw (script: _ufw-paranoid.sh_*).
-- 
+- cbonsai (to pretend I'm an old man and relax, of course)
+- I'll add more if I remember...
 
 There are also other systems I've had from years ago (check _screenshots_) and a dumb one (_XFWM4-Standalone_).
 
 ### Things to consider in the future:
-- Combine Tokyo-Night theme with modified-otis.
 - Make the repo tidier.
-- Simple shell script for restoration in case of a potential system nuking.
+- Simple shell script for restoration (or just install a package for that, ya dum dum) in case of a potential system nuking.
 - Removing reliance on xorg and X11 (waiting for XFCE4 to have Wayland support first).
 - Try not to be an idiot and keep your head high (also, be extra careful).
 
