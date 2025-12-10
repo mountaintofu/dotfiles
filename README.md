@@ -11,9 +11,9 @@ This is a repository to keep track of what I've done to my system.
 ![](	/../main/screenshots/minimal-tokyo.png)
 - Tela-circle-blue icons.
 - modified-otis-darker*.
-- Bibata-Modern-Ice mouse.
+- ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
 - ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
-- ![Librewolf/Firefox extension*.](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)
+- ![Librewolf/Firefox extension*](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/).
 
 ### Some other scripts:
 - tlp (default=_auto_) + cpupower-gui (default=_Bottle_*) for _v-tec.sh_ (Performance/Bottle mode).
