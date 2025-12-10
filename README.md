@@ -2,7 +2,7 @@
 
 ### Current setup (Arch Linux, XFCE4, X11):
 
-> Hardware: Lexar SL300 1TB (got it on sale, lol), and whatever laptop/computer I got my hands on.
+> Hardware: <ins>Lexar SL300 1TB</ins> (got it on sale, lol), and whatever laptop/computer I got my hands on.
 >
 > ( _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in. )
 >
@@ -12,8 +12,8 @@
 
 This is a repository to keep track of what I've done to my system.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
-- xfce4-panel, custom genmon scripts (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh)).
-- yay + zsh + oh-my-posh (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*).
+- <ins>xfce4-panel</ins>, custom <ins>genmon</ins> ("<ins>G</ins>eneric <ins>M</ins>onitor") scripts (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh)).
+- <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins> (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*).
 ![](	/../main/screenshots/minimal-tokyo.png)
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
 - ![modified-otis-darker](	/../main/xfce4-themes/themes/modified-otis-darker/)*.
