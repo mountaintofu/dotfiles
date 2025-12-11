@@ -40,7 +40,7 @@ Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main
 - Window tiling uses stock XFCE bindings (see [Keyboard Shortcuts](#keyboard-shortcuts))
 
 ### Panel
-Custom **xfce4-panel** with **genmon** scripts:
+Customized **xfce4-panel** with **genmon** scripts:
 - [windowTitle.sh](config/genmon/windowTitle.sh)
 - [vtec.sh](config/genmon/vtec.sh)
 - [batteryBar.sh](config/genmon/batteryBar.sh)
