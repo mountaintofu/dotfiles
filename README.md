@@ -28,7 +28,7 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 - <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>. (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.)
 ![](	/../main/screenshots/minimal-tokyo.png)
 
-- <ins>xfce4-terminal --drop-down</ins>.
+- <ins>xfce4-terminal</ins> --drop-down (check *Keyboard Shortcuts* for keybind).
 
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
   
