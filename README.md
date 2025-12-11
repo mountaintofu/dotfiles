@@ -4,7 +4,7 @@
 
 > Hardware: <ins>Lexar SL300 1TB</ins> (got it on sale, lol), and whatever laptop/computer I get my hands on.\
 \
-_"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in (use *sudo* if needed).\
+_"usr/share/sounds/"_, _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in (use *sudo* if needed).\
 \
 There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).
 
