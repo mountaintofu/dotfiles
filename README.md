@@ -71,7 +71,9 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 
 
 - <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> (![installation](https://wiki.archlinux.org/title/Wine#Installation)) for Windows' games compatibility.
-  
+
+- <ins>Flashpoint</ins> (for nostalgia, ![installation tutorial](https://flashpointarchive.org/datahub/Linux_Support))
+
 - <ins>LM Studio</ins> for playing with AI.
 ```
 Currently using:
