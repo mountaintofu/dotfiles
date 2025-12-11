@@ -55,9 +55,9 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 > depends on <ins>WireGuard</ins> (available on _AUR_) and <ins>Proton VPN</ins> (just create an account and check for WG's config files there, remember to extend the files year-long expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_.
 
 - Disk Encryption (https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition).
-> <b>Must be done</b> before fully installing the system onto disk.
-> For easy setup, use *archinstall* (https://archinstall.archlinux.page/) available on Arch Linux live environment.
-> Don't forget to *connect to the internet* (https://wiki.archlinux.org/title/Installation_guide?pubDate=20251202#Connect_to_the_internet).
+> <b>Must be done</b> before fully installing the system onto disk.\
+For easy setup, use *archinstall* (https://archinstall.archlinux.page/) available on Arch Linux live environment.\
+Don't forget to *connect to the internet* (https://wiki.archlinux.org/title/Installation_guide?pubDate=20251202#Connect_to_the_internet).
 
 > <b>I'll add more if I remember...</b>
 
