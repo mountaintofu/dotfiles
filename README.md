@@ -28,8 +28,6 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
   
-- ![modified-otis-darker](	/../main/xfce4-themes/themes/modified-otis-darker/)*.
-  
 - ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
 
 - KDE ![ocean-sound-theme](https://github.com/KDE/ocean-sound-theme). 
