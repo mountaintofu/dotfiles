@@ -93,7 +93,7 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
   
 - <ins>VLC</ins> and <ins>mpv</ins> (for playing media.)
   
-- <ins>Mousepad</ins> and <ins>VSCodium</ins>.
+- <ins>Mousepad</ins> and <ins>VSCodium</ins> (*vscodium-bin* for fast installation).
   
 - <ins>GIMP</ins> for image editing and <ins>Viewnior</ins> for viewing images.
 
