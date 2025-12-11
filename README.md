@@ -55,7 +55,7 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 > #### I'll add more if I remember...
 
 
-### Miscellaneous (chucking in some packages I installed).
+### Miscellaneous (chucking in some packages I installed, most are available on the AUR or GitHub).
 - <ins>tmatrix</ins>. (I like the matrix-trilogy.)
   
 - <ins>yazi</ins>. (CLI alternative to Thunar.)
