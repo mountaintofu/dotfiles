@@ -49,9 +49,9 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 > default=![Bottle](	/../main/config/cpupower_gui/cpg-Bottle.profile) (510 MHz/CPU, powersaving) for ![vtec.sh](	/../main/config/genmon/vtec.sh).
 
 - <ins>ufw</ins>.
-> configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*. (Require *sudo*.)
+> configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*.
 
-- ![quickwg.sh](	/../main/config/quickwg.sh)* (require *sudo*.) 
+- ![quickwg.sh](	/../main/config/quickwg.sh)*.
 > depends on <ins>WireGuard</ins> (available on _AUR_) and <ins>Proton VPN</ins> (just create an account and check for WG's config files there, remember to extend the files year-long expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_.
 
 - ![Disk Encryption](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition).
