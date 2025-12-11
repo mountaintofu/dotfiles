@@ -35,6 +35,9 @@ Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main
 
 ## Theming
 
+### Screen Scaling
+- [autoScaler.sh](config/autoScaler.sh) — Fetch screen resolution and scale in proportion. 
+
 ### Window Manager
 - [TNO](xfce4-themes/themes/TNO.zip)\* — Custom theme with gaps between windows
 - Window tiling uses stock XFCE bindings (see [Keyboard Shortcuts](#keyboard-shortcuts))
