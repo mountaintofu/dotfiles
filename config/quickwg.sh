@@ -7,7 +7,7 @@
 SERVERS="
 jp:wg-JP-FREE-34:Japan
 us:wg-US-FREE-112:United States
-nl:wg-NL-FREE-255:Netherlands
+nl:wg-NL-FREE-225:Netherlands
 "
 
 # ─────────────────────────────────────────────
@@ -158,7 +158,7 @@ read -rp "Choose an option: " server_of_choice
 case $server_of_choice in
     1) target="wg-JP-FREE-34" ;;
     2) target="wg-US-FREE-112" ;;
-    3) target="wg-NL-FREE-255" ;;
+    3) target="wg-NL-FREE-225" ;;
     4)
         if [ "$SERVER_NAME" != "none" ]; then
             disconnect "$SERVER_NAME"
