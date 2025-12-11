@@ -1,125 +1,157 @@
-# Some tinkering I did for my Linux machine(s).
+# Dotfiles
 
-### Current setup (Arch Linux, XFCE4, X11):
+Personal Linux configuration files and setup documentation.
 
-> Hardware: <ins>Lexar SL300 1TB</ins> (got it on sale, lol), and whatever laptop/computer I get my hands on.\
-\
-_"usr/share/sounds/"_, _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in (use *sudo* if needed).\
-\
-There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).\
-\
-Most of what I've done can be found on ![Arch Wiki](https://wiki.archlinux.org/title/Main_page).
+## Current Setup
+
+| | |
+|---|---|
+| **OS** | Arch Linux |
+| **DE** | XFCE4 |
+| **Display Server** | X11 |
+| **Hardware** | Lexar SL300 1TB (portable setup) |
 
 <p align="center">
-<img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-11_01-11-12.png" hspace="10"/>
-<img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-06_09-25-18.png" hspace="10"/>
-<img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-11_00-55-23.png" hspace="10"/>
-<img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-11_00-59-25.png" hspace="10"/>
-
+  <img height="192" width="341" src="screenshots/Screenshot_2025-12-11_01-11-12.png" hspace="10"/>
+  <img height="192" width="341" src="screenshots/Screenshot_2025-12-06_09-25-18.png" hspace="10"/>
+  <img height="192" width="341" src="screenshots/Screenshot_2025-12-11_00-55-23.png" hspace="10"/>
+  <img height="192" width="341" src="screenshots/Screenshot_2025-12-11_00-59-25.png" hspace="10"/>
 </p>
 
-This is a somewhat comprehensive tutorial repository to keep track of what I've done to my system.
-- ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
-> There are gaps between windows. Window-tiling are stock, binded in ![Keyboard Shortcut](	/../main/README.md#keyboard-shortcuts).
+---
 
+## Installation Notes
 
-- <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
-  
-- <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>. (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.)
-![](	/../main/screenshots/minimal-tokyo.png)
+Theme and icon directories (use `sudo` if needed):
+- `/usr/share/sounds/`
+- `/usr/share/themes/`
+- `/usr/share/icons/`
 
-- <ins>xfce4-terminal</ins> --drop-down (check ![Keyboard Shortcut](	/../main/README.md#keyboard-shortcuts) for keybind).
+Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main_page).
 
-- ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
-  
-- ![Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) mouse theme.
+> See [screenshots](screenshots/) for previous setups and [XFWM4-Standalone](XFWM4-Standalone/usr) for a minimal configuration.
 
-- KDE ![ocean-sound-theme](https://github.com/KDE/ocean-sound-theme). 
-> To turn sound on: Appearance/Settings/Enable event sounds.
+---
 
-- ![MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
-> Theme ![collections](https://github.com/Jacksaur/Gorgeous-GRUB/tree/main) (Gorgeous-GRUB).\
-> ![Installation](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) and 2nd ![link](	/../main/grub-themes/Installation.md).
-  
-- ![Librewolf/Firefox extension](	/../main/custom-add-on(s)/Tokyo-Night-Tabs/)*.
+## Theming
 
+### Window Manager
+- [TNO](xfce4-themes/themes/TNO.zip)\* — Custom theme with gaps between windows
+- Window tiling uses stock XFCE bindings (see [Keyboard Shortcuts](#keyboard-shortcuts))
 
-### Security and efficiency:
-- <ins>tlp</ins> (default=_auto_) + <ins>cpupower-gui</ins>.
-> default=Bottle (510 MHz/CPU, powersaving) for ![vtec.sh](	/../main/config/genmon/vtec.sh).
+### Panel
+Custom **xfce4-panel** with **genmon** scripts:
+- [windowTitle.sh](config/genmon/windowTitle.sh)
+- [vtec.sh](config/genmon/vtec.sh)
+- [batteryBar.sh](config/genmon/batteryBar.sh)
+- [presentationMode.sh](config/genmon/presentationMode.sh)
 
-- <ins>ufw</ins>.
-> configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*.
+### Terminal
+- **yay** + **zsh** + **oh-my-posh**
+- Custom prompt: [minimal-tokyo.omp.json](config/minimal-tokyo.omp.json)\*
+- **xfce4-terminal** drop-down mode (see [Keyboard Shortcuts](#keyboard-shortcuts))
 
-- ![quickwg.sh](	/../main/config/quickwg.sh)*.
-> depends on <ins>WireGuard</ins> (available on _AUR_) and <ins>Proton VPN</ins> (just create an account and check for WG's config files there, remember to extend the files year-long expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_.
+![Terminal Preview](screenshots/minimal-tokyo.png)
 
-- Disk Encryption (https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition).
-> <i><b>Must be done</b> before fully installing the system onto disk</i>.\
-For easy setup, use *archinstall* (https://archinstall.archlinux.page/) available on Arch Linux live environment.\
-Don't forget to *connect to the internet* (https://wiki.archlinux.org/title/Installation_guide?pubDate=20251202#Connect_to_the_internet).
+### Icons & Cursors
+- [Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons
+- [Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) cursor
 
-> <b>I'll add more if I remember...</b>
+### Sounds
+- KDE [ocean-sound-theme](https://github.com/KDE/ocean-sound-theme)
+  > Enable via: *Appearance → Settings → Enable event sounds*
 
+### GRUB
+- [MilkGrub](https://github.com/gemakfy/MilkGrub) theme
+- Theme collection: [Gorgeous-GRUB](https://github.com/Jacksaur/Gorgeous-GRUB)
+- Installation: [Guide](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) | [Local copy](grub-themes/Installation.md)
 
-### Miscellaneous (chucking in some packages I installed, most are available on the AUR or GitHub).
-- <ins>tmatrix</ins>. (I like the matrix-trilogy.)
-  
-- <ins>yazi</ins>. (CLI alternative to Thunar.)
-  
-- <ins>cbonsai</ins>. (To pretend I'm an old man sipping tea and relax, of course.)
+### Browser Extension
+- [Tokyo Night Tabs](custom-add-on(s)/Tokyo-Night-Tabs/)\* — LibreWolf/Firefox extension
 
-- <ins>btop</ins>, <ins>fastfetch</ins> 
-> "/$HOME/.config/fastfetch/![ascii.txt](	/../main/config/fastfetch/ascii.txt)", "![config.jsonc](	/../main/config/fastfetch/config.jsonc)") and <ins>neofetch</ins> ("/$HOME/.config/neofetch/![config.conf](	/../main/config/neofetch/config.conf)".
-  
-- <ins>IBus</ins>/<ins>IBus-Bamboo</ins>
-> (for certain special characters, though require a restart after every long usage: _ibus restart_).
+---
 
+## Security & Efficiency
 
-- <ins>VMWare-Workstation</ins>/<ins>Player</ins> and <ins>Wine-Staging</ins> (![installation](https://wiki.archlinux.org/title/Wine#Installation)) for Windows' games compatibility.
+### Power Management
+- **tlp** (default: auto) + **cpupower-gui**
+  > Default profile: Bottle (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)
 
-- <ins>Flashpoint</ins> (for nostalgia, ![installation](https://flashpointarchive.org/datahub/Linux_Support))
+### Firewall
+- **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh)\*
 
-- <ins>LM Studio</ins> for playing with AI.
+### VPN
+- [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN
+  > Requires **WireGuard** (AUR) and a **Proton VPN** account. Download config files from Proton VPN dashboard. Add symlink to `~/.local/bin/`.
 
-> Some I've used:
-> + Deepseek R1 0528 Qwen3 8B Q8_0.
-> + Qwen3 4B Thinking 2507 Q4_K_H.
-> + Qwen2.5 Coder 7B Instruct Q4_K_M.
-> + Qwen2.5 Coder 14B Q4_K_M.
+### Disk Encryption
+- LUKS encryption: [Arch Wiki Guide](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition)
+  > ⚠️ **Must be configured before system installation.** Use [archinstall](https://archinstall.archlinux.page/) for easy setup. [Connect to the internet](https://wiki.archlinux.org/title/Installation_guide#Connect_to_the_internet) first.
 
+---
 
-- <ins>LibreOffice</ins>.
-  
-- <ins>Xtreme Download Manager</ins>.
-  
-- <ins>VLC</ins> and <ins>mpv</ins> (for playing media.)
-  
-- <ins>Mousepad</ins> and <ins>VSCodium</ins> (*vscodium-bin* for fast installation).
-  
-- <ins>GIMP</ins> for image editing and <ins>Viewnior</ins> for viewing images.
+## Applications
 
+### CLI Tools
+| Package | Description |
+|---------|-------------|
+| **tmatrix** | Matrix rain animation |
+| **yazi** | Terminal file manager (Thunar alternative) |
+| **cbonsai** | Bonsai tree generator |
+| **btop** | System monitor |
+| **fastfetch** | System info ([ascii.txt](config/fastfetch/ascii.txt), [config.jsonc](config/fastfetch/config.jsonc)) |
+| **neofetch** | System info ([config.conf](config/neofetch/config.conf)) |
 
-## Things to consider in the future:
-- Make the repo tidier.
-- Simple shell script for restoration (or just install a package for that, ya dum dum) in case of a potential system nuking.
-- Removing reliance on xorg and X11 (waiting for XFCE4 to have full Wayland support first).
-- Try not to be an idiot and keep your head high (also, be extra careful).
+### Input Method
+- **IBus** / **IBus-Bamboo** — Special character input
+  > May require restart after extended use: `ibus restart`
 
+### Compatibility
+| Package | Purpose |
+|---------|---------|
+| **VMware Workstation/Player** | Virtual machines |
+| **Wine-Staging** | Windows compatibility ([guide](https://wiki.archlinux.org/title/Wine#Installation)) |
+| **Flashpoint** | Flash game archive ([guide](https://flashpointarchive.org/datahub/Linux_Support)) |
 
->[!NOTE]
-> #### Keyboard Shortcuts:
-> - <ins>Tile Left</ins>: Alt + Left
-> - <ins>Tile Right</ins>: Alt + Right
-> - <ins>Tile Up (Wide)</ins>: Alt + Up
-> - <ins>Tile Down (Wide)</ins>: Alt + Down
-> - <ins>Tile Up (Left)</ins>: Alt + ;
-> - <ins>Tile Up (Right)</ins>: Alt + '
-> - <ins>Tile Down (Left)</ins>: Alt + ,
-> - <ins>Tile Down (Right)</ins>: Alt + .
-> - <ins>Fullscreen</ins>: Alt + /
-> - <ins>xfce4-terminal --drop-down</ins>: SUPER + Z
-> - <ins>IBus Preference/Keyboard Shortcut</ins>: Alt + X
+### AI
+- **LM Studio** — Local LLM inference
+  > Models: Deepseek R1 Qwen3 8B, Qwen3 4B Thinking, Qwen2.5 Coder 7B/14B
 
-> *: customed to fit my tastes and needs, duh.\
-<sub>(syntax help: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</sub>
+### Productivity
+| Package | Purpose |
+|---------|---------|
+| **LibreOffice** | Office suite |
+| **Xtreme Download Manager** | Download manager |
+| **VLC** / **mpv** | Media players |
+| **Mousepad** / **VSCodium** | Text editors |
+| **GIMP** / **Viewnior** | Image editing/viewing |
+
+---
+
+## Keyboard Shortcuts
+
+| Action | Keybind |
+|--------|---------|
+| Tile Left | `Alt + ←` |
+| Tile Right | `Alt + →` |
+| Tile Up (Wide) | `Alt + ↑` |
+| Tile Down (Wide) | `Alt + ↓` |
+| Tile Up Left | `Alt + ;` |
+| Tile Up Right | `Alt + '` |
+| Tile Down Left | `Alt + ,` |
+| Tile Down Right | `Alt + .` |
+| Fullscreen | `Alt + /` |
+| Drop-down Terminal | `Super + Z` |
+| IBus Preferences | `Alt + X` |
+
+---
+
+## TODO
+
+- [ ] Clean up repository structure
+- [ ] Create restoration script
+- [ ] Migrate to Wayland (pending XFCE4 support)
+
+---
+
+<sub>\* Custom configurations tailored to personal preferences.</sub>
