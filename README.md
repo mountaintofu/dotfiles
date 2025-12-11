@@ -29,7 +29,7 @@ Theme and icon directories (use `sudo` if needed):
 
 Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main_page).
 
-> See [screenshots](screenshots/) for previous setups and [XFWM4-Standalone](XFWM4-Standalone/usr) for a minimal configuration.
+> See [screenshots](screenshots/) for previous setups and [XFWM4-Standalone](XFWM4-Standalone/usr) for a not-so-minimal-but-educational configuration.
 
 ---
 
