@@ -141,8 +141,8 @@ Custom **xfce4-panel** with **genmon** scripts:
 | Tile Down Left | `Alt + ,` |
 | Tile Down Right | `Alt + .` |
 | Fullscreen | `Alt + /` |
-| Drop-down Terminal | `Super + Z` |
-| IBus Preferences | `Alt + X` |
+| xfce4-terminal --drop-down | `Super + Z` |
+| IBus-setup/Keyboard Shortcuts | `Alt + X` |
 
 ---
 
