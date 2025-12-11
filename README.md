@@ -25,8 +25,10 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 
 - <ins>xfce4-panel</ins>, custom <ins>genmon</ins> scripts. (![windowTitle.sh](	/../main/config/genmon/windowTitle.sh), ![vtec.sh](	/../main/config/genmon/vtec.sh), ![batteryBar.sh](	/../main/config/genmon/batteryBar.sh), ![presentationMode.sh](	/../main/config/genmon/presentationMode.sh).)
   
-- *"xfce4-terminal --drop-down"* + <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>. (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.)
+- <ins>yay</ins> + <ins>zsh</ins> + <ins>oh-my-posh</ins>. (![minimal-tokyo.omp.json](	/../main/config/minimal-tokyo.omp.json)*.)
 ![](	/../main/screenshots/minimal-tokyo.png)
+
+- <ins>xfce4-terminal --drop-down</ins>.
 
 - ![Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
   
@@ -115,6 +117,7 @@ Currently using:
 > - <ins>Tile Down (Left)</ins>: Alt + ,
 > - <ins>Tile Down (Right)</ins>: Alt + .
 > - <ins>Fullscreen</ins>: Alt + /
+> - <ins>xfce4-terminal --drop-down</ins>: SUPER + Z
 > - <ins>IBus Preference/Keyboard Shortcut</ins>: Alt + X
 
 > *: customed to fit my tastes and needs, duh.\
