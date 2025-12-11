@@ -80,7 +80,7 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 
 - <ins>LM Studio</ins> for playing with AI.
 ```
-Currently using:
+Some I've used:
 + Deepseek R1 0528 Qwen3 8B Q8_0.
 + Qwen3 4B Thinking 2507 Q4_K_H.
 + Qwen2.5 Coder 7B Instruct Q4_K_M.
