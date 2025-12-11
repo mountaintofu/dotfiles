@@ -47,9 +47,9 @@ Customized **xfce4-panel** with **genmon** scripts:
 - [presentationMode.sh](config/genmon/presentationMode.sh)
 
 ### Terminal
+- **xfce4-terminal** drop-down mode (see [Keyboard Shortcuts](#keyboard-shortcuts))
 - **yay** + **zsh** + **oh-my-posh**
 - Custom prompt: [minimal-tokyo.omp.json](config/minimal-tokyo.omp.json)\*
-- **xfce4-terminal** drop-down mode (see [Keyboard Shortcuts](#keyboard-shortcuts))
 
 ![Terminal Preview](screenshots/minimal-tokyo.png)
 
