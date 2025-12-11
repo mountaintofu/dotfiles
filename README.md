@@ -150,10 +150,9 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ## TODO
 
-- [ ] Clean up repository structure
 - [ ] Create restoration script
 - [ ] Migrate to Wayland (pending XFCE4 support)
 
 ---
 
-<sub>\* Custom configurations tailored to personal preferences.</sub>
+<sub>\* Custom configs tailored to me, duh.</sub>
