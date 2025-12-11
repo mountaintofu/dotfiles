@@ -151,7 +151,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 ## TODO
 
 - [ ] Create restoration script
-- [ ] Migrate to Wayland (pending XFCE4 support)
+- [ ] Migrate to Wayland (pending XFWM4 support)
 
 ---
 
