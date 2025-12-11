@@ -65,8 +65,7 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
   
 - <ins>yazi</ins>. (CLI alternative to Thunar.)
   
-- <ins>cbonsai</ins>.
-> To pretend I'm an old man sipping tea and relax, of course.
+- <ins>cbonsai</ins>. (To pretend I'm an old man sipping tea and relax, of course.)
 
 - <ins>btop</ins>, <ins>fastfetch</ins> 
 > "/$HOME/.config/fastfetch/![ascii.txt](	/../main/config/fastfetch/ascii.txt)", "![config.jsonc](	/../main/config/fastfetch/config.jsonc)") and <ins>neofetch</ins> ("/$HOME/.config/neofetch/![config.conf](	/../main/config/neofetch/config.conf)".
