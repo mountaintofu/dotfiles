@@ -18,7 +18,7 @@ Most of what I've done can be found on ![Arch Wiki](https://wiki.archlinux.org/t
 
 </p>
 
-This is a somewhat comprehensive tutorial repository to keep track of what I've done to my system, I guess. Copy whatever you want.
+This is a somewhat comprehensive tutorial repository to keep track of what I've done to my system, I guess. Copy whatever you want/need.
 - ![TNO](	/../main/xfce4-themes/themes/TNO.zip)* theme.
 > There are gaps between windows. Window-tiling are stock, binded in ![Keyboard Shortcut](	/../main/README.md#keyboard-shortcuts).
 
