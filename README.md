@@ -46,7 +46,7 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 
 ### Security and efficiency:
 - <ins>tlp</ins> (default=_auto_) + <ins>cpupower-gui</ins>.
-> default=![Bottle](	/../main/config/cpupower_gui/cpg-Bottle.profile) (510 MHz/CPU, powersaving) for ![vtec.sh](	/../main/config/genmon/vtec.sh).
+> default=Bottle (510 MHz/CPU, powersaving) for ![vtec.sh](	/../main/config/genmon/vtec.sh).
 
 - <ins>ufw</ins>.
 > configuration script: ![ufw-paranoid.sh](	/../main/config/ufw-paranoid.sh)*.
