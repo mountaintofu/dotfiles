@@ -6,7 +6,9 @@
 \
 _"usr/share/sounds/"_, _"/usr/share/themes/"_ and _"/usr/share/icons/"_ are where to put themes and icons in (use *sudo* if needed).\
 \
-There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).
+There are also other systems I've had on USBs and microSDs from years back (already disposed of for storage, check ![screenshots](	/../main/screenshots/)) and a dumb one (![XFWM4-Standalone](	/../main/XFWM4-Standalone/usr)).\
+\
+Most of what I've done can be found on ![Arch Wiki](https://wiki.archlinux.org/title/Main_page).
 
 <p align="center">
 <img height="192" width="341" src="https://github.com/mountaintofu/dotfiles/blob/main/screenshots/Screenshot_2025-12-11_01-11-12.png" hspace="10"/>
@@ -49,6 +51,9 @@ This is a somewhat comprehensive tutorial repository to keep track of what I've 
 
 - ![quickwg.sh](	/../main/config/quickwg.sh)* (require *sudo*.) 
 > depends on <ins>WireGuard</ins> (available on _AUR_) and <ins>Proton VPN</ins> (just create an account and check for WG's config files there, remember to extend the files year-long expiration dates), don't forget to put its/quicksw.sh link in _"/.local/bin/"_.
+
+- ![Disk Encryption](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition).
+> Must be done before fully installing the system onto disk. For easy setup, use ![archinstall](https://archinstall.archlinux.page/) available on Arch Linux live environment, don't forget to ![connect to the internet](https://wiki.archlinux.org/title/Installation_guide?pubDate=20251202#Connect_to_the_internet).
 
 > #### I'll add more if I remember...
 
