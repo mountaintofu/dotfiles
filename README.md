@@ -104,7 +104,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### Disk Encryption
 - LUKS encryption: [Arch Wiki Guide](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition).
-  > ⚠️ **Must be configured before system installation.**
+  > ⚠️ **Must be configured before system installation.**\
   > Use [archinstall](https://archinstall.archlinux.page/) for easy setup. [Connect to the internet](https://wiki.archlinux.org/title/Installation_guide#Connect_to_the_internet) first.
 
 ### Power Management
