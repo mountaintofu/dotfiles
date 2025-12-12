@@ -87,7 +87,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 - CanvasBlocker.
 - `media.peerconnection.enabled = false` (in `about:config`).
 - `firejail` sandbox (alternative to Tor).
-  > Quick script: [parawolf.sh](config/parawolf.sh)\*. Add symlink to `~/.local/bin/`.
+  > Wrapper script: [parawolf.sh](config/parawolf.sh)\*. Add symlink to `~/.local/bin/`.
 
 ### VPN
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN.
