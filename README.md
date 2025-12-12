@@ -1,6 +1,6 @@
 # .files
 
-Comprehensive personal Linux configuration files and setup documentation.
+Personal Linux configuration files and setup documentation.
 
 ## Current Setup
 
