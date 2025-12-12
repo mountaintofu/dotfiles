@@ -22,7 +22,7 @@ Personal Linux configuration files and setup documentation.
 
 ## Installation Notes
 
-Theme and icon directories (use `sudo` if needed):
+Theme and icon directories:
 - `/usr/share/sounds/`
 - `/usr/share/themes/`
 - `/usr/share/icons/`
@@ -36,7 +36,7 @@ Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main
 ## Theming
 
 ### Screen Scaling
-- [autoScaler.sh](config/autoScaler.sh) — Fetch screen resolution and scale in proportion. 
+- [autoScaler.sh](config/autoScaler.sh) — Fetches screen resolution and scales proportionally
 
 ### Window Manager
 - [TNO](xfce4-themes/themes/TNO.zip)\* — Custom theme with gaps between windows
@@ -52,7 +52,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 - [presentationMode.sh](config/genmon/presentationMode.sh)
 
 ### Terminal
-- **xfce4-terminal** drop-down mode (see [Keyboard Shortcuts](#keyboard-shortcuts))
+- **xfce4-terminal** in drop-down mode (see [Keyboard Shortcuts](#keyboard-shortcuts))
 - **yay** + **zsh** + **oh-my-posh**
 - Custom prompt: [minimal-tokyo.omp.json](config/minimal-tokyo.omp.json)\*
 
@@ -78,23 +78,22 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ## Security & Efficiency
 
-### Browser Extensions
-- ublock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))
+### Browser Setup
+- uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))
 - Privacy Badger
 - CanvasBlocker
-
-### Firejail (Sandbox)
-- [parawolf.sh](config/parawolf.sh)\*
-  > Quick and simple script for ```firejail --private librewolf```.\
-  Depends on ```firejail```(AUR).
+- `media.peerconnection.enabled = false` (in `about:config`)
+- Sandbox (alternative to Tor)
+  > Depends on `firejail` (AUR).
+  > Quick script: [parawolf.sh](config/parawolf.sh). Add symlink to `~/.local/bin/`.
 
 ### VPN
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN
-  > Requires **WireGuard** (AUR) and a **Proton VPN** account. Download config files from Proton VPN dashboard. Add symlink to `~/.local/bin/`.
+  > Requires **WireGuard** (AUR) and a **Proton VPN** account. Download config files from the Proton VPN dashboard. Add symlink to `~/.local/bin/`.
 
 ### Automatic MAC Changing
 - **macchanger**
-  > Prompted upon installation. [Guide](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2), just in case.
+  > Prompted upon installation. See the [guide](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2) if needed.
 
 ### Firewall
 - **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh)\*
@@ -123,7 +122,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### Input Method
 - **IBus** / **IBus-Bamboo** — Special character input
-  > May require restart after extended use: `ibus restart`
+  > May require a restart after extended use: `ibus restart`
 
 ### Compatibility
 | Package | Purpose |
@@ -134,7 +133,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### AI
 - **LM Studio** — Local LLM inference
-  > Models: Deepseek R1 Qwen3 8B, Qwen3 4B Thinking, Qwen2.5 Coder 7B/14B
+  > Models: DeepSeek R1 Qwen3 8B, Qwen3 4B Thinking, Qwen2.5 Coder 7B/14B
 
 ### Productivity
 | Package | Purpose |
@@ -151,17 +150,17 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 | Action | Keybind |
 |--------|---------|
-| Tile Left | `Alt + ←` |
-| Tile Right | `Alt + →` |
-| Tile Up (Wide) | `Alt + ↑` |
-| Tile Down (Wide) | `Alt + ↓` |
-| Tile Up Left | `Alt + ;` |
-| Tile Up Right | `Alt + '` |
-| Tile Down Left | `Alt + ,` |
-| Tile Down Right | `Alt + .` |
+| Tile left | `Alt + ←` |
+| Tile right | `Alt + →` |
+| Tile up (wide) | `Alt + ↑` |
+| Tile down (wide) | `Alt + ↓` |
+| Tile up-left | `Alt + ;` |
+| Tile up-right | `Alt + '` |
+| Tile down-left | `Alt + ,` |
+| Tile down-right | `Alt + .` |
 | Fullscreen | `Alt + /` |
 | xfce4-terminal --drop-down | `Super + Z` |
-| IBus-setup/Keyboard Shortcuts | `Alt + X` |
+| IBus setup / keyboard shortcuts | `Alt + X` |
 
 ---
 
