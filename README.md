@@ -22,10 +22,13 @@ Personal Linux configuration files and setup documentation.
 
 ## Installation Notes
 
-Theme and icon directories:
+System directories (may require `sudo`):
 - `/usr/share/sounds/`
 - `/usr/share/themes/`
 - `/usr/share/icons/`
+
+User scripts:
+- `~/.local/bin/`
 
 Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main_page).
 
@@ -79,12 +82,12 @@ Customized **xfce4-panel** with **genmon** scripts:
 ## Security & Efficiency
 
 ### Browser Setup
-- uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt)).
+- uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))\*.
 - Privacy Badger.
 - CanvasBlocker.
 - `media.peerconnection.enabled = false` (in `about:config`).
 - `firejail` sandbox (alternative to Tor).
-  > Quick script: [parawolf.sh](config/parawolf.sh). Add symlink to `~/.local/bin/`.
+  > Quick script: [parawolf.sh](config/parawolf.sh)\*. Add symlink to `~/.local/bin/`.
 
 ### VPN
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN.
@@ -96,7 +99,7 @@ Customized **xfce4-panel** with **genmon** scripts:
   > Prompted upon installation. See the [guide](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2) if needed.
 
 ### Firewall
-- **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh).
+- **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh)\*.
 
 ### Disk Encryption
 - LUKS encryption: [Arch Wiki Guide](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition).
@@ -104,7 +107,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### Power Management
 - **tlp** (default: auto) + **cpupower-gui**.
-  > Default profile: Bottle (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh).
+  > Default profile: Bottle* (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh).
 
 ---
 
