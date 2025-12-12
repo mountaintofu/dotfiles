@@ -1,4 +1,4 @@
-# Dotfiles
+# .files
 
 Personal Linux configuration files and setup documentation.
 
