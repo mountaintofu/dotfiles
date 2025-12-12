@@ -68,8 +68,8 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### GRUB
 - [MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
-- Theme collection: [Gorgeous-GRUB](https://github.com/Jacksaur/Gorgeous-GRUB),
-- Installation: [Guide](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md). | [Local copy](grub-themes/Installation.md).
+- Theme collection: [Gorgeous-GRUB](https://github.com/Jacksaur/Gorgeous-GRUB).
+- Installation: [Guide](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) | [Local copy](grub-themes/Installation.md).
 
 ### Browser Extension
 - [Tokyo Night Tabs](custom-add-on(s)/Tokyo-Night-Tabs/)\* — LibreWolf/Firefox extension.
@@ -83,12 +83,12 @@ Customized **xfce4-panel** with **genmon** scripts:
 - Privacy Badger.
 - CanvasBlocker.
 - `media.peerconnection.enabled = false` (in `about:config`).
-- ```firejail``` sandbox (alternative to Tor).
+- `firejail` sandbox (alternative to Tor).
   > Quick script: [parawolf.sh](config/parawolf.sh). Add symlink to `~/.local/bin/`.
 
 ### VPN
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN.
-  > Requires **wireguard-tools** (AUR) and a **Proton VPN** account.\
+  > Requires **wireguard-tools** and a **Proton VPN** account.\
   Download config files from the Proton VPN dashboard. Add symlink to `~/.local/bin/`.
 
 ### Automatic MAC Changing
@@ -159,15 +159,15 @@ Customized **xfce4-panel** with **genmon** scripts:
 | Tile down-left | `Alt + ,` |
 | Tile down-right | `Alt + .` |
 | Fullscreen | `Alt + /` |
-| ```xfce4-terminal --drop-down``` | `Super + Z` |
-| IBus setup / keyboard shortcuts | `Alt + X` |
+| `xfce4-terminal --drop-down` | `Super + Z` |
+| `ibus-setup` | `Alt + X` |
 
 ---
 
 ## TODO
 
-- [ ] Create restoration script.
-- [ ] Migrate to Wayland (pending XFWM4 support).
+- [ ] Create restoration script
+- [ ] Migrate to Wayland (pending XFWM4 support)
 
 ---
 
