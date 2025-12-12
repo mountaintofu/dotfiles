@@ -160,7 +160,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 | Tile down-right | `Alt + .` |
 | Fullscreen | `Alt + /` |
 | `xfce4-terminal --drop-down` | `Super + Z` |
-| `ibus-setup` (next input method) | `Alt + X` |
+| Next input method (`ibus-setup`) | `Alt + X` |
 
 ---
 
