@@ -78,6 +78,10 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ## Security & Efficiency
 
+### Automatic MAC Changing
+- **macchanger**
+  > Prompted upon installation. [Guide](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2), just in case.
+
 ### Power Management
 - **tlp** (default: auto) + **cpupower-gui**
   > Default profile: Bottle (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)
