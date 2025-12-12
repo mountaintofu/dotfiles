@@ -30,9 +30,9 @@ System directories (may require `sudo`):
 User scripts:
 - `~/.local/bin/`
 
-Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main_page).
-
-> See [screenshots](screenshots/) for previous setups and [XFWM4-Standalone](theme-files/XFWM4-Standalone/usr) for a not-so-minimal-but-educational configuration.
+> Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main_page).
+>
+> See [screenshots](screenshots/) for previous setups. [XFWM4-Standalone](theme-files/XFWM4-Standalone/usr) is experimental.
 
 ---
 
