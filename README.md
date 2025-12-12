@@ -2,7 +2,7 @@
 
 Personal Linux configuration files and setup documentation.
 
-## Current Setup.
+## Current Setup
 
 | | |
 |---|---|
@@ -20,7 +20,7 @@ Personal Linux configuration files and setup documentation.
 
 ---
 
-## Installation Notes.
+## Installation Notes
 
 Theme and icon directories:
 - `/usr/share/sounds/`
@@ -33,12 +33,12 @@ Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main
 
 ---
 
-## Theming.
+## Theming
 
-### Screen Scaling.
+### Screen Scaling
 - [autoScaler.sh](config/autoScaler.sh) — Fetches screen resolution and scales proportionally.
 
-### Window Manager.
+### Window Manager
 - [TNO](xfce4-themes/themes/TNO.zip)\* — Custom theme with gaps between windows.
 - Window tiling uses stock XFCE bindings (see [Keyboard Shortcuts](#keyboard-shortcuts)).
 
@@ -51,34 +51,34 @@ Customized **xfce4-panel** with **genmon** scripts:
 - [batteryBar.sh](config/genmon/batteryBar.sh).
 - [presentationMode.sh](config/genmon/presentationMode.sh).
 
-### Terminal.
+### Terminal
 - **xfce4-terminal** in drop-down mode (see [Keyboard Shortcuts](#keyboard-shortcuts)).
 - **yay** + **zsh** + **oh-my-posh**.
 - Custom prompt: [minimal-tokyo.omp.json](config/minimal-tokyo.omp.json)\*.
 
 ![Terminal Preview](screenshots/minimal-tokyo.png)
 
-### Icons & Cursors.
+### Icons & Cursors
 - [Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
 - [Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) cursor.
 
-### Sounds.
+### Sounds
 - KDE [ocean-sound-theme](https://github.com/KDE/ocean-sound-theme).
   > Enable via: *Appearance → Settings → Enable event sounds*.
 
-### GRUB.
+### GRUB
 - [MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
 - Theme collection: [Gorgeous-GRUB](https://github.com/Jacksaur/Gorgeous-GRUB),
 - Installation: [Guide](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md). | [Local copy](grub-themes/Installation.md).
 
-### Browser Extension.
+### Browser Extension
 - [Tokyo Night Tabs](custom-add-on(s)/Tokyo-Night-Tabs/)\* — LibreWolf/Firefox extension.
 
 ---
 
-## Security & Efficiency.
+## Security & Efficiency
 
-### Browser Setup.
+### Browser Setup
 - uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt)).
 - Privacy Badger.
 - CanvasBlocker.
@@ -86,31 +86,31 @@ Customized **xfce4-panel** with **genmon** scripts:
 - ```firejail``` sandbox (alternative to Tor).
   > Quick script: [parawolf.sh](config/parawolf.sh). Add symlink to `~/.local/bin/`.
 
-### VPN.
+### VPN
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN.
   > Requires **wireguard-tools** (AUR) and a **Proton VPN** account.\
   Download config files from the Proton VPN dashboard. Add symlink to `~/.local/bin/`.
 
-### Automatic MAC Changing.
+### Automatic MAC Changing
 - **macchanger**.
   > Prompted upon installation. See the [guide](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2) if needed.
 
-### Firewall.
+### Firewall
 - **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh).
 
-### Disk Encryption.
+### Disk Encryption
 - LUKS encryption: [Arch Wiki Guide](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition).
   > ⚠️ **Must be configured before system installation.** Use [archinstall](https://archinstall.archlinux.page/) for easy setup. [Connect to the internet](https://wiki.archlinux.org/title/Installation_guide#Connect_to_the_internet) first.
 
-### Power Management.
+### Power Management
 - **tlp** (default: auto) + **cpupower-gui**.
   > Default profile: Bottle (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh).
 
 ---
 
-## Applications.
+## Applications
 
-### CLI Tools.
+### CLI Tools
 | Package | Description |
 |---------|-------------|
 | **tmatrix** | Matrix rain animation |
@@ -120,22 +120,22 @@ Customized **xfce4-panel** with **genmon** scripts:
 | **fastfetch** | System info ([ascii.txt](config/fastfetch/ascii.txt), [config.jsonc](config/fastfetch/config.jsonc)) |
 | **neofetch** | System info ([config.conf](config/neofetch/config.conf)) |
 
-### Input Method.
+### Input Method
 - **IBus** / **IBus-Bamboo** — Special character input.
   > May require a restart after extended use: `ibus restart`.
 
-### Compatibility.
+### Compatibility
 | Package | Purpose |
 |---------|---------|
 | **VMware Workstation/Player** | Virtual machines |
 | **Wine-Staging** | Windows compatibility ([guide](https://wiki.archlinux.org/title/Wine#Installation)) |
 | **Flashpoint** | Flash game archive ([guide](https://flashpointarchive.org/datahub/Linux_Support)) |
 
-### AI.
+### AI
 - **LM Studio** — Local LLM inference.
   > Models: DeepSeek-R1-Qwen3-8B, Qwen3-4B-Thinking, Qwen2.5-Coder-7B/14B.
 
-### Productivity.
+### Productivity
 | Package | Purpose |
 |---------|---------|
 | **LibreOffice** | Office suite |
@@ -146,7 +146,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ---
 
-## Keyboard Shortcuts.
+## Keyboard Shortcuts
 
 | Action | Keybind |
 |--------|---------|
@@ -164,7 +164,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ---
 
-## TODO.
+## TODO
 
 - [ ] Create restoration script.
 - [ ] Migrate to Wayland (pending XFWM4 support).
