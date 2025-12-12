@@ -78,24 +78,33 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ## Security & Efficiency
 
-### Automatic MAC Changing
-- **macchanger**
-  > Prompted upon installation. [Guide](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2), just in case.
+### Browser Extensions
+- ublock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))
+- Privacy Badger
+- CanvasBlocker
 
-### Power Management
-- **tlp** (default: auto) + **cpupower-gui**
-  > Default profile: Bottle (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)
-
-### Firewall
-- **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh)\*
+### Firejail (Sandbox)
+- **parawolf**
+  > Quick and simple script for ```firejail --private librewolf```. Can be used for other programs.
 
 ### VPN
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN
   > Requires **WireGuard** (AUR) and a **Proton VPN** account. Download config files from Proton VPN dashboard. Add symlink to `~/.local/bin/`.
 
+### Automatic MAC Changing
+- **macchanger**
+  > Prompted upon installation. [Guide](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2), just in case.
+
+### Firewall
+- **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh)\*
+
 ### Disk Encryption
 - LUKS encryption: [Arch Wiki Guide](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition)
   > ⚠️ **Must be configured before system installation.** Use [archinstall](https://archinstall.archlinux.page/) for easy setup. [Connect to the internet](https://wiki.archlinux.org/title/Installation_guide#Connect_to_the_internet) first.
+
+### Power Management
+- **tlp** (default: auto) + **cpupower-gui**
+  > Default profile: Bottle (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)
 
 ---
 
