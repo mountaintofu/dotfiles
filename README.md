@@ -29,7 +29,7 @@ Theme and icon directories:
 
 Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main_page).
 
-> See [screenshots](screenshots/) for previous setups and [XFWM4-Standalone](XFWM4-Standalone/usr) for a not-so-minimal-but-educational configuration.
+> See [screenshots](screenshots/) for previous setups and [XFWM4-Standalone](theme-files/XFWM4-Standalone/usr) for a not-so-minimal-but-educational configuration.
 
 ---
 
@@ -39,7 +39,7 @@ Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main
 - [autoScaler.sh](config/autoScaler.sh) — Fetches screen resolution and scales proportionally.
 
 ### Window Manager
-- [TNO](xfce4-themes/themes/TNO.zip)\* — Custom theme with gaps between windows.
+- [TNO](theme-files/xfce4-themes/themes/TNO.zip)\* — Custom theme with gaps between windows.
 - Window tiling uses stock XFCE bindings (see [Keyboard Shortcuts](#keyboard-shortcuts)).
 
 ### Panel
@@ -69,10 +69,10 @@ Customized **xfce4-panel** with **genmon** scripts:
 ### GRUB
 - [MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
 - Theme collection: [Gorgeous-GRUB](https://github.com/Jacksaur/Gorgeous-GRUB).
-- Installation: [Guide](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) | [Local copy](grub-themes/Installation.md).
+- Installation: [Guide](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) | [Local copy](theme-files/grub-themes/Installation.md).
 
 ### Browser Extension
-- [Tokyo Night Tabs](custom-add-on(s)/Tokyo-Night-Tabs/)\* — LibreWolf/Firefox extension.
+- [Tokyo Night Tabs](theme-files/custom-browser-add-on(s)/Tokyo-Night-Tabs/)\* — LibreWolf/Firefox extension.
 
 ---
 
