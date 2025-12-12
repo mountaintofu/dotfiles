@@ -84,8 +84,8 @@ Customized **xfce4-panel** with **genmon** scripts:
 - CanvasBlocker
 
 ### Firejail (Sandbox)
-- **parawolf**
-  > Quick and simple script for ```firejail --private librewolf```. Can be used for other programs.
+- [parawolf.sh](config/parawolf.sh)\*
+  > Quick and simple script for ```firejail --private librewolf```. Change if needed.
 
 ### VPN
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN
