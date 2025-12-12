@@ -104,7 +104,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### Power Management
 - **tlp** (default: auto) + **cpupower-gui**
-  > Default profile: Bottle (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)
+  > Default profile: Bottle (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh).
 
 ---
 
@@ -122,7 +122,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### Input Method
 - **IBus** / **IBus-Bamboo** — Special character input
-  > May require a restart after extended use: `ibus restart`
+  > May require a restart after extended use: `ibus restart`.
 
 ### Compatibility
 | Package | Purpose |
@@ -133,7 +133,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### AI
 - **LM Studio** — Local LLM inference
-  > Models: DeepSeek R1 Qwen3 8B, Qwen3 4B Thinking, Qwen2.5 Coder 7B/14B
+  > Models: DeepSeek R1 Qwen3 8B, Qwen3 4B Thinking, Qwen2.5 Coder 7B/14B.
 
 ### Productivity
 | Package | Purpose |
