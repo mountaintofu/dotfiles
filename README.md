@@ -58,8 +58,8 @@ User scripts:
 - Window tiling uses stock XFCE bindings (see [Keyboard Shortcuts](#keyboard-shortcuts)).
 
 ### Icons & Cursors
-- [Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
-- [Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) cursor.
+- [Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons. [Local copy](theme-files/xfce4-themes/icons/Tela-circle-icon-theme-master.zip).
+- [Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) cursor. [Local copy](theme-files/xfce4-themes/icons/Bibata-Modern-Ice.zip).
 
 ### Panel
 ![Panel Preview](screenshots/Screenshot_2025-12-11_13-49-41.png)
