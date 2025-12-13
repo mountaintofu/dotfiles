@@ -82,6 +82,8 @@ Customized **xfce4-panel** with **genmon** scripts:
 ## Security & Efficiency
 
 ### Browser Setup
+Use `[package]-bin` for faster installation.
+
 **LibreWolf**
 - uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))\*.
   > Alternatively `Adnauseum` ([settings](config/AdNauseam_Settings_Export_12.13.2025.1.43.10AM.json)\*).\
