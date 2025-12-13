@@ -38,6 +38,11 @@ User scripts:
 
 ## Theming
 
+### GRUB
+- [MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
+- Theme collection: [Gorgeous-GRUB](https://github.com/Jacksaur/Gorgeous-GRUB).
+- Installation: [Guide](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) | [Local copy](theme-files/grub-themes/Installation.md).
+
 ### Display Manager
 - LightDM.
 
@@ -51,6 +56,10 @@ User scripts:
 ### Window Manager
 - [TNO](theme-files/xfce4-themes/themes/TNO.zip)* — Custom theme with gaps between windows.
 - Window tiling uses stock XFCE bindings (see [Keyboard Shortcuts](#keyboard-shortcuts)).
+
+### Icons & Cursors
+- [Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
+- [Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) cursor.
 
 ### Panel
 ![Panel Preview](screenshots/Screenshot_2025-12-11_13-49-41.png)
@@ -68,19 +77,10 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ![Terminal Preview](screenshots/minimal-tokyo.png)
 
-### Icons & Cursors
-- [Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
-- [Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) cursor.
-
 ### Audio
 - `pipewire` defaults.
 - KDE [ocean-sound-theme](https://github.com/KDE/ocean-sound-theme).
   > Enable via: *Appearance → Settings → Enable event sounds*.
-
-### GRUB
-- [MilkGrub](https://github.com/gemakfy/MilkGrub) theme.
-- Theme collection: [Gorgeous-GRUB](https://github.com/Jacksaur/Gorgeous-GRUB).
-- Installation: [Guide](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) | [Local copy](theme-files/grub-themes/Installation.md).
 
 ### Browser Extension
 - [Tokyo Night Tabs](theme-files/custom-browser-add-on(s)/Tokyo-Night-Tabs/)* — LibreWolf/Firefox extension.
