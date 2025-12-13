@@ -4,7 +4,7 @@ Personal Linux configuration files and setup documentation.
 
 ## Current Setup
 
-| **Component** | **Details** |
+| Component | Details |
 |---|---|
 | **OS** | Arch Linux |
 | **DE** | XFCE4 |
@@ -12,10 +12,10 @@ Personal Linux configuration files and setup documentation.
 | **Hardware** | Lexar SL300 1TB (portable setup) |
 
 <p align="center">
-  <img height="192" width="341" src="screenshots/Screenshot_2025-12-11_01-11-12.png" style="margin: 5 10px;"/>
-  <img height="192" width="341" src="screenshots/Screenshot_2025-12-06_09-25-18.png" style="margin: 5 10px;"/>
-  <img height="192" width="341" src="screenshots/Screenshot_2025-12-11_00-55-23.png" style="margin: 5 10px;"/>
-  <img height="192" width="341" src="screenshots/Screenshot_2025-12-11_00-59-25.png" style="margin: 5 10px;"/>
+  <img height="192" width="341" src="screenshots/Screenshot_2025-12-11_01-11-12.png" style="margin: 5px 10px;"/>
+  <img height="192" width="341" src="screenshots/Screenshot_2025-12-06_09-25-18.png" style="margin: 5px 10px;"/>
+  <img height="192" width="341" src="screenshots/Screenshot_2025-12-11_00-55-23.png" style="margin: 5px 10px;"/>
+  <img height="192" width="341" src="screenshots/Screenshot_2025-12-11_00-59-25.png" style="margin: 5px 10px;"/>
 </p>
 
 ---
