@@ -38,26 +38,33 @@ User scripts:
 
 ## Theming
 
-### Screen Scaling
+### Display Manager
+- LightDM.
+
+### Autostart
 - [autoScaler.sh](config/autoScaler.sh) — Fetches screen resolution and scales proportionally.
+- `Blueman Applet` — For wireless audio usage.
+- IBus — Special characters input.
+- cpupower-gui `Bottle` profile - Throttling CPUs for battery-saving purposes.
+- Libinput Gestures — Touchscreen compatibility.
 
 ### Window Manager
-- [TNO](theme-files/xfce4-themes/themes/TNO.zip)\* — Custom theme with gaps between windows.
+- [TNO](theme-files/xfce4-themes/themes/TNO.zip)* — Custom theme with gaps between windows.
 - Window tiling uses stock XFCE bindings (see [Keyboard Shortcuts](#keyboard-shortcuts)).
 
 ### Panel
 ![Panel Preview](screenshots/Screenshot_2025-12-11_13-49-41.png)
 
 Customized **xfce4-panel** with **genmon** scripts:
-- [windowTitle.sh](config/genmon/windowTitle.sh).
-- [vtec.sh](config/genmon/vtec.sh)\*.
-- [batteryBar.sh](config/genmon/batteryBar.sh)\*.
-- [presentationMode.sh](config/genmon/presentationMode.sh)\*.
+- [windowTitle.sh](config/genmon/windowTitle.sh) — Display current window.
+- [vtec.sh](config/genmon/vtec.sh)* — Set the scaling frequencies and governor of a CPU.
+- [batteryBar.sh](config/genmon/batteryBar.sh)* — Displaying battery's capacity and various information.
+- [presentationMode.sh](config/genmon/presentationMode.sh)* — XFCE4's presentation mode toggle.
 
 ### Terminal
 - **xfce4-terminal** in drop-down mode (see [Keyboard Shortcuts](#keyboard-shortcuts)).
 - **yay** + **zsh** + **oh-my-posh**.
-- Custom prompt: [minimal-tokyo.omp.json](config/minimal-tokyo.omp.json)\*.
+- Custom prompt: [minimal-tokyo.omp.json](config/minimal-tokyo.omp.json)*.
 
 ![Terminal Preview](screenshots/minimal-tokyo.png)
 
@@ -65,7 +72,8 @@ Customized **xfce4-panel** with **genmon** scripts:
 - [Tela-circle-blue](https://github.com/vinceliuice/Tela-circle-icon-theme) icons.
 - [Bibata-Modern-Ice](https://github.com/ful1e5/Bibata_Cursor) cursor.
 
-### Sounds
+### Audio
+- `pipewire` defaults.
 - KDE [ocean-sound-theme](https://github.com/KDE/ocean-sound-theme).
   > Enable via: *Appearance → Settings → Enable event sounds*.
 
@@ -75,7 +83,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 - Installation: [Guide](https://github.com/Jacksaur/Gorgeous-GRUB/blob/main/Installation.md) | [Local copy](theme-files/grub-themes/Installation.md).
 
 ### Browser Extension
-- [Tokyo Night Tabs](theme-files/custom-browser-add-on(s)/Tokyo-Night-Tabs/)\* — LibreWolf/Firefox extension.
+- [Tokyo Night Tabs](theme-files/custom-browser-add-on(s)/Tokyo-Night-Tabs/)* — LibreWolf/Firefox extension.
 
 ---
 
@@ -85,40 +93,40 @@ Customized **xfce4-panel** with **genmon** scripts:
 Use `[package]-bin` for faster installation.
 
 **LibreWolf**
-- uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))\*.
-  > Alternatively `Adnauseum` ([settings](config/AdNauseam_Settings_Export_12.13.2025.1.43.10AM.json)\*).\
-  > Use **only** one or the other.
+- uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))*.
+  > Alternatively `Adnauseum` ([settings](config/AdNauseam_Settings_Export_12.13.2025.1.43.10AM.json)*).\
+  Use **only** one or the other.
 - Privacy Badger.
 - CanvasBlocker.
 - `media.peerconnection.enabled = false` (in `about:config`).
 - `firejail` sandbox (alternative to `tor-browser-bin`).
-  > Wrapper script: [parawolf.sh](config/parawolf.sh)\*. Add symlink to `~/.local/bin/`.
+  > Wrapper script: [parawolf.sh](config/parawolf.sh)*. Add symlink to `~/.local/bin/`.
 
 **Tor Browser**
 - Stock only, meant for *users* to look identical.
   > More plugins → more fingerprint. Not ideal.
 
 ### VPN
-- [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN.
+- [quickwg.sh](config/quickwg.sh)* — WireGuard wrapper for Proton VPN.
   > Requires **wireguard-tools** and a **Proton VPN** account.\
-  > Download config files from the Proton VPN dashboard. Add symlink to `~/.local/bin/`.\
-  > ⚠️ **Usage of both (VPN and `tor`) will compromise anonymity.**
+  Download config files from the Proton VPN dashboard. Add symlink to `~/.local/bin/`.\
+  ⚠️ **Usage of both (VPN and `tor`) will compromise anonymity.**
 
 ### Automatic MAC Changing
 - **macchanger**.
   > Prompted upon installation. See the [guide](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2) if needed.
 
 ### Firewall
-- **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh)\*.
+- **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh)*.
 
 ### Disk Encryption
 - LUKS encryption: [Arch Wiki Guide](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition).
   > ⚠️ **Must be configured before system installation.**\
-  > Use [archinstall](https://archinstall.archlinux.page/) for easy setup. [Connect to the internet](https://wiki.archlinux.org/title/Installation_guide#Connect_to_the_internet) first.
+  Use [archinstall](https://archinstall.archlinux.page/) for easy setup. [Connect to the internet](https://wiki.archlinux.org/title/Installation_guide#Connect_to_the_internet) first.
 
 ### Power Management
 - **tlp** (default: auto) + **cpupower-gui**.
-  > Default `cpupower-gui` profile: Bottle* (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)\*.
+  > Default `cpupower-gui` profile: Bottle* (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)*.
 
 ---
 
