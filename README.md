@@ -117,7 +117,8 @@ Use `[package]-bin` for faster installation.
   > Prompted upon installation. See the [guide](https://wiki.archlinux.org/title/MAC_address_spoofing#macchanger_2) if needed.
 
 ### Firewall
-- **ufw** — Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh)*.
+- **ufw**.
+  > Configuration: [ufw-paranoid.sh](config/ufw-paranoid.sh)*.
 
 ### Disk Encryption
 - LUKS encryption: [Arch Wiki Guide](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition).
