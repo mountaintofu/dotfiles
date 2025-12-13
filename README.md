@@ -104,7 +104,7 @@ Use `[package]-bin` for faster installation.
 
 **Tor Browser**
 - Stock only, meant for *users* to look identical.
-  > More plugins → more fingerprint. Not ideal.
+  > More plugins → more fingerprinting. Not ideal.
 
 ### VPN
 - [quickwg.sh](config/quickwg.sh)* — WireGuard wrapper for Proton VPN.
