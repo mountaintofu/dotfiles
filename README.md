@@ -109,7 +109,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### Power Management
 - **tlp** (default: auto) + **cpupower-gui**.
-  > Default profile: Bottle* (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh).
+  > Default profile: Bottle* (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)\*.
 
 ---
 
