@@ -95,7 +95,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN.
   > Requires **wireguard-tools** and a **Proton VPN** account.\
   > Download config files from the Proton VPN dashboard. Add symlink to `~/.local/bin/`.\
-  > **Usage of both (VPN and `tor`) will compromise anonymity.**
+  > ⚠️ **Usage of both (VPN and `tor`) will compromise anonymity.**
 
 ### Automatic MAC Changing
 - **macchanger**.
