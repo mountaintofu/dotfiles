@@ -30,7 +30,7 @@ System directories (may require `sudo`):
 User scripts:
 - `~/.local/bin/`
 
-> Most configurations follow the [Arch Wiki](https://wiki.archlinux.org/title/Main_page).
+> Refer to the [Arch Wiki](https://wiki.archlinux.org/title/Main_page) for more information.
 >
 > See [screenshots](screenshots/) for previous setups. [XFWM4-Standalone](theme-files/XFWM4-Standalone/usr) is experimental.
 
@@ -50,9 +50,9 @@ User scripts:
 
 Customized **xfce4-panel** with **genmon** scripts:
 - [windowTitle.sh](config/genmon/windowTitle.sh).
-- [vtec.sh](config/genmon/vtec.sh).
-- [batteryBar.sh](config/genmon/batteryBar.sh).
-- [presentationMode.sh](config/genmon/presentationMode.sh).
+- [vtec.sh](config/genmon/vtec.sh)\*.
+- [batteryBar.sh](config/genmon/batteryBar.sh)\*.
+- [presentationMode.sh](config/genmon/presentationMode.sh)\*.
 
 ### Terminal
 - **xfce4-terminal** in drop-down mode (see [Keyboard Shortcuts](#keyboard-shortcuts)).
@@ -83,17 +83,19 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### Browser Setup
 - uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))\*.
-  > Alternatively `Adnauseum` (use either one). [Settings](config/AdNauseam_Settings_Export_12.13.2025.1.43.10AM.json)\*.
+  > Alternatively `Adnauseum` ([settings](config/AdNauseam_Settings_Export_12.13.2025.1.43.10AM.json)\*).\
+  > Use **only** one or the other.
 - Privacy Badger.
 - CanvasBlocker.
 - `media.peerconnection.enabled = false` (in `about:config`).
-- `firejail` sandbox (alternative to Tor).
+- `firejail` sandbox (alternative to `tor-browser-bin`).
   > Wrapper script: [parawolf.sh](config/parawolf.sh)\*. Add symlink to `~/.local/bin/`.
 
 ### VPN
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN.
   > Requires **wireguard-tools** and a **Proton VPN** account.\
-  Download config files from the Proton VPN dashboard. Add symlink to `~/.local/bin/`.
+  > Download config files from the Proton VPN dashboard. Add symlink to `~/.local/bin/`.\
+  > Usage of both (VPN and `tor`) will **compromise** anonymity.
 
 ### Automatic MAC Changing
 - **macchanger**.
@@ -109,7 +111,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 
 ### Power Management
 - **tlp** (default: auto) + **cpupower-gui**.
-  > Default profile: Bottle* (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)\*.
+  > Default `cpupower-gui` profile: Bottle* (510 MHz/CPU, powersave) for [vtec.sh](config/genmon/vtec.sh)\*.
 
 ---
 
