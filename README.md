@@ -43,9 +43,9 @@ User scripts:
 
 ### Autostart
 - [autoScaler.sh](config/autoScaler.sh) — Fetches screen resolution and scales proportionally.
-- `Blueman Applet` — For wireless audio usage.
+- Blueman Applet — For wireless audio usage.
 - IBus — Special characters input.
-- cpupower-gui `Bottle` profile - Throttling CPUs for battery-saving purposes.
+- `cpupower-gui` profile: Bottle* - Throttling CPUs for battery-saving purposes.
 - Libinput Gestures — Touchscreen compatibility.
 
 ### Window Manager
@@ -94,7 +94,7 @@ Use `[package]-bin` for faster installation.
 
 **LibreWolf**
 - uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))*.
-  > Alternatively `Adnauseum` ([settings](config/AdNauseam_Settings_Export_12.13.2025.1.43.10AM.json)*).\
+  > Alternatively `AdNauseum` ([settings](config/AdNauseam_Settings_Export_12.13.2025.1.43.10AM.json)*).\
   Use **only** one or the other.
 - Privacy Badger.
 - CanvasBlocker.
