@@ -43,7 +43,7 @@ User scripts:
 
 ### Autostart
 - [autoScaler.sh](config/autoScaler.sh) — Fetches screen resolution and scales proportionally.
-- Blueman Applet — For wireless audio usage.
+- Blueman Applet — Wireless audio usage.
 - IBus — Special characters input.
 - `cpupower-gui` profile: Bottle* - Throttling CPUs for battery-saving purposes.
 - Libinput Gestures — Touchscreen compatibility.
