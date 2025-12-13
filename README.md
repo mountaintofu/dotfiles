@@ -82,6 +82,7 @@ Customized **xfce4-panel** with **genmon** scripts:
 ## Security & Efficiency
 
 ### Browser Setup
+**LibreWolf**
 - uBlock Origin ([settings](config/my-ublock-backup_2025-12-13_00.10.00.txt))\*.
   > Alternatively `Adnauseum` ([settings](config/AdNauseam_Settings_Export_12.13.2025.1.43.10AM.json)\*).\
   > Use **only** one or the other.
@@ -90,6 +91,10 @@ Customized **xfce4-panel** with **genmon** scripts:
 - `media.peerconnection.enabled = false` (in `about:config`).
 - `firejail` sandbox (alternative to `tor-browser-bin`).
   > Wrapper script: [parawolf.sh](config/parawolf.sh)\*. Add symlink to `~/.local/bin/`.
+
+**Tor Browser**
+- Stock only, meant for *users* to look identical.
+  > More plugins → more fingerprint. Not ideal.
 
 ### VPN
 - [quickwg.sh](config/quickwg.sh)\* — WireGuard wrapper for Proton VPN.
